@@ -54,7 +54,7 @@ const Header = (props: Props) => {
                         </div>
 
                         <div className='flex gap-2'>
-                            <a href={githubUrl} target='_blank' className='flex items-center gap-1 group'
+                            <a href={githubUrl} target='_blank' rel="noreferrer" className='flex items-center gap-1 group'
                                 onMouseEnter={() => setPlay((prev) => ({ ...prev, sIcon: true }))}
                                 onMouseLeave={() => setPlay((prev) => ({ ...prev, sIcon: false }))}
                             >
