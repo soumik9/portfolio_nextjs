@@ -1,4 +1,4 @@
-import LandingLayout from '@/components/LandingLayout/LandingLayout'
+
 import Head from 'next/head'
 
 export default function Home() {
@@ -11,9 +11,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <LandingLayout>
+      {/* <LandingLayout>
         hii
-      </LandingLayout>
+      </LandingLayout> */}
+
+      ami
     </>
   )
 }

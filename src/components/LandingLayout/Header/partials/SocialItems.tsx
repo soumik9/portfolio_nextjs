@@ -1,4 +1,5 @@
-import { navItemType } from '@/config/types/types'
+
+import { navItemType } from '@config/types/types';
 import React from 'react'
 
 type Props = {

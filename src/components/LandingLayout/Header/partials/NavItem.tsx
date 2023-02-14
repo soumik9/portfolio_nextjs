@@ -1,4 +1,5 @@
-import { navItemType } from "@/config/types/types";
+
+import { navItemType } from "@config/types/types";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
@@ -15,7 +16,6 @@ const NavItem = ({ item, index, last }: Props) => {
     // global
     const { route } = useRouter();
 
-    console.log(item)
 
     return (
         <li className="relative group menu py-5 cursor-pointer">

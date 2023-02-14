@@ -1,13 +1,16 @@
-import { githubUrl, navItems, navSocialItems } from '@/config/constants';
-import { navItemType } from '@/config/types/types';
-import { cx } from '@/hooks/helpers';
-import useHideBodyScroll from '@/hooks/useHideBodyScroll';
 import React, { useState } from 'react'
-import NavItem from '../partials/NavItem';
+import NavItem from './partials/NavItem';
 import codeEditorIcon from '../../../../public/json/code.json';
 import Lottie from 'react-lottie-player';
+import SocialItems from './partials/SocialItems';
+import useHideBodyScroll from 'src/hooks/useHideBodyScroll';
+import { navItemType } from '@config/types/types';
+import { githubUrl, homeUrl, navItems, navSocialItems } from '@config/constants';
+import { cx } from 'src/hooks/helpers';
+import Hamburger from '@components/Icons/global/Hamburger';
+import Cross from '@components/Icons/global/Cross';
 import Link from 'next/link';
-import SocialItems from '../partials/SocialItems';
+import MobileMenu from './partials/MobileMenu';
 
 type Props = {}
 
@@ -36,9 +39,12 @@ const Header = (props: Props) => {
 
                         <div className='flex gap-[40px] items-center'>
                             {/* <HeaderLogo /> */}
-                            <div className='h-[40px] w-[40px] bg-primary flex items-center justify-center rounded-[8px]'>
-                                <p className='text-[32px]'>S</p>
-                            </div>
+                            <Link href={homeUrl} legacyBehavior>
+                                <a className='h-[40px] w-[40px] bg-primary flex items-center justify-center rounded-[8px]'>
+                                    <span className='text-[32px] text-lightDark'>S</span>
+                                </a>
+                            </Link>
+
 
                             {/* desktop menu */}
                             <ul className="hidden lg:flex items-center lg:gap-x-[25px]">
@@ -53,7 +59,7 @@ const Header = (props: Props) => {
                             </ul>
                         </div>
 
-                        <div className='flex gap-2'>
+                        <div className='hidden lg:flex gap-2'>
                             <a href={githubUrl} target='_blank' rel="noreferrer" className='flex items-center gap-1 group'
                                 onMouseEnter={() => setPlay((prev) => ({ ...prev, sIcon: true }))}
                                 onMouseLeave={() => setPlay((prev) => ({ ...prev, sIcon: false }))}
@@ -82,35 +88,22 @@ const Header = (props: Props) => {
                             </ul>
                         </div>
 
-                        {/* <div className="lg:hidden flex gap-[30px]"> */}
-                        {/* <NavRight
-                                handleSideNav={handleSideNav}
-                                showHumburgerMenu={true}
-                                showCloseBtn={false}
-                                setShowSideNav={setShowSideNav}
-                                showSideNav={showSideNav}
-                            /> */}
-                        {/* </div> */}
-
-                        {/* <div className="lg:block hidden "> */}
-                        {/* <NavRight
-                                handleSideNav={handleSideNav}
-                                showHumburgerMenu={true}
-                                showCloseBtn={false}
-                                setShowSideNav={setShowSideNav}
-                            /> */}
-                        {/* </div> */}
+                        <div className={`lg:hidden flex items-center justify-center ${showSideNav && "ml-[7px]"}`} >
+                            <button className="outline-none" onClick={handleSideNav}>
+                                {showSideNav ? <Cross /> : <Hamburger />}
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
 
             {/* mobile navbar menu */}
-            <div className={`navbar-menu relative md:z-[99] z-[999] lg:hidden ${showSideNav ? "block" : "hidden"}`} >
-                {/* <MobileHumburgerMenu
+            <div className={`navbar-menu relative z-[999] lg:hidden ${showSideNav ? "block" : "hidden"}`} >
+                <MobileMenu
                     handleSideNav={handleSideNav}
                     setShowSideNav={setShowSideNav}
                     showSideNav={showSideNav}
-                /> */}
+                />
             </div>
         </>
     )

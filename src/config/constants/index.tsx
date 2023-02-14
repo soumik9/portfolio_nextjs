@@ -1,3 +1,8 @@
+import EmailIcon from "@components/Icons/socials/EmailIcon";
+import FacebookIcon from "@components/Icons/socials/FacebookIcon";
+import Github from "@components/Icons/socials/Github";
+import LinkedinIcon from "@components/Icons/socials/LinkedinIcon";
+import WhatsappIcon from "@components/Icons/socials/WhatsappIcon";
 import { navItemType } from "../types/types";
 
 // contact info
@@ -39,21 +44,58 @@ export const navSocialItems: navItemType[] = [
     {
         _id: 'navSocialItem_1',
         title: 'FB',
-        url: facebookUrl
+        url: facebookUrl,
+        icon: <FacebookIcon />,
     },
     {
         _id: 'navSocialItem_2',
         title: 'Lkdin',
-        url: linkedinUrl
+        url: linkedinUrl,
+        icon: <LinkedinIcon />,
     },
     {
         _id: 'navSocialItem_3',
         title: 'Wapp',
-        url: 'https://wa.me/01689201370'
+        url: 'https://wa.me/01689201370',
+        icon: <WhatsappIcon />,
     },
     {
         _id: 'navSocialItem_4',
         title: 'Email',
-        url: emailAcc
+        url: emailAcc,
+        icon: <EmailIcon />,
+    },
+]
+
+export const socialItems: navItemType[] = [
+    {
+        _id: 'socialItem_1',
+        title: 'Github',
+        url: githubUrl,
+        icon: <Github />,
+    },
+    {
+        _id: 'socialItem_2',
+        title: 'FB',
+        url: facebookUrl,
+        icon: <FacebookIcon />,
+    },
+    {
+        _id: 'socialItem_3',
+        title: 'Lkdin',
+        url: linkedinUrl,
+        icon: <LinkedinIcon />,
+    },
+    {
+        _id: 'socialItem_4',
+        title: 'Wapp',
+        url: 'https://wa.me/01689201370',
+        icon: <WhatsappIcon />,
+    },
+    {
+        _id: 'socialItem_5',
+        title: 'Email',
+        url: emailAcc,
+        icon: <EmailIcon />,
     },
 ]
