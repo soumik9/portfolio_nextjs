@@ -16,6 +16,8 @@ export const githubUrl: string = "https://github.com/soumik9";
 
 export const homeUrl: string = "/";
 export const aboutUrl: string = "/about";
+export const caseStudyUrl: string = "/case-study";
+export const contactUrl: string = "/contact-us";
 
 export const navItems: navItemType[] = [
     {
@@ -31,12 +33,12 @@ export const navItems: navItemType[] = [
     {
         _id: 'navItem_3',
         title: 'Case Study',
-        url: aboutUrl
+        url: caseStudyUrl
     },
     {
         _id: 'navItem_4',
         title: 'Contact',
-        url: aboutUrl
+        url: contactUrl
     },
 ]
 
@@ -97,5 +99,22 @@ export const socialItems: navItemType[] = [
         title: 'Email',
         url: emailAcc,
         icon: <EmailIcon />,
+    },
+]
+export const footerUserfulItems: navItemType[] = [
+    {
+        _id: 'footUseful_1',
+        title: 'About Me',
+        url: aboutUrl,
+    },
+    {
+        _id: 'footUseful_2',
+        title: 'Case Study',
+        url: caseStudyUrl,
+    },
+    {
+        _id: 'footUseful_3',
+        title: 'Contact Me',
+        url: contactUrl,
     },
 ]

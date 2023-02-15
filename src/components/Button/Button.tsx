@@ -2,17 +2,23 @@
 import React from 'react'
 import { cx } from 'src/hooks/helpers'
 
-type Props = {}
+type Props = {
+    outlined?: boolean;
+}
 
-const Button = (props: Props) => {
+const Button = ({ outlined }: Props) => {
     return (
-        <button
-            className={cx(
-                'relative text-primary flex items-center bg-none border-none p-[12px_18px] cursor-pointer before:content-none before:absolute before:top-[50%] before:z-[-1] before:translate-[calc(100%+4px)-50%)] before:w-[45px] before:h-[45px] before:bg-purple before:rounded-full'
-            )}
-        >
-            Button
-        </button>
+        <div className='my-10 container'>
+            <button
+                className={cx(
+                    'button-arounder p-[16px_24px] text-[18px]   focus:bg-smartian hover:bg-primary-700',
+                    outlined ? 'bg-white text-primary border border-primary focus:text-white hover:text-white ' : 'bg-primary text-white border-none'
+                )}
+            >
+                Hover Me
+            </button>
+        </div>
+
     )
 }
 

@@ -4,8 +4,8 @@ type Props = {}
 
 const WhatsappIcon = (props: Props) => {
     return (
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" fill='#E7BD8D' xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 496 496" enableBackground="new 0 0 496 496" xmlSpace="preserve" width="32" height="32">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" className='fill-primary-600 hover:fill-primary-300 trans' xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 496 496" enableBackground="new 0 0 496 496" xmlSpace="preserve" width="28" height="28">
             <g>
                 <g>
                     <path d="M321.824,276.528c-0.88-1.424-3.168-2.304-6.608-4.016c-3.456-1.68-20.48-10-23.632-11.152

@@ -22,6 +22,8 @@ module.exports = {
         secondary: '#D5D2E4',
 
         lightDark: "#1A1826",
+
+        smartian: '#3c6382'
       },
       fontFamily: {
         primary: ["Andika", "sans-serif"],

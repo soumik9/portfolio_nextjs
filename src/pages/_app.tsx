@@ -1,6 +1,6 @@
 
-import '@/styles/globals.css'
-import '@/styles/tailwind.css'
+import '@styles/globals.css'
+import '@styles/tailwind.css'
 import LandingLayout from '@components/LandingLayout/LandingLayout'
 import type { AppProps } from 'next/app'
 

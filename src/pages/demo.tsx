@@ -8,6 +8,7 @@ const demo = (props: Props) => {
     return (
         <>
             <Button />
+            <Button outlined={true} />
         </>
     )
 }
