@@ -26,7 +26,7 @@ const Footer = (props: Props) => {
                         <div className="w-full lg:w-6/12">
 
                             <Typography variant="h4" gutterBottom className='text-secondary'>
-                                Let's keep in touch!
+                                {` Let's keep in touch!`}
                             </Typography>
 
                             <Typography variant="subtitle1" gutterBottom className='text-secondary mt-0 mb-2'>
