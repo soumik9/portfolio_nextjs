@@ -11,16 +11,14 @@ import wakieIcon from '../../../../public/json/walkie.json'
 import emailIcon from '../../../../public/json/email.json'
 import locationIcon from '../../../../public/json/location.json'
 import DesktopFollowMe from './partials/DesktopFollowMe'
+import DetailsItem from './partials/DetailsItem'
 
 type Props = {}
 
 const Footer = (props: Props) => {
 
-    const [play, setPlay] = useState({
-        wakieIcon: false,
-        emailIcon: false,
-        locationIcon: false,
-    });
+    // states
+    const [play, setPlay] = useState({ wakieIcon: false, emailIcon: false, locationIcon: false });
 
     return (
         <>
@@ -71,59 +69,35 @@ const Footer = (props: Props) => {
                                 <span className="block uppercase text-sm font-semibold lg:text-white text-primary">Details</span>
                                 <ul className="mt-4 flex flex-col items-center md:items-start">
 
-                                    <li className=''>
-                                        <a href={`tel:${mobileNumber}`} className='flex items-center gap-1 group'
-                                            onMouseEnter={() => setPlay((prev) => ({ ...prev, wakieIcon: true }))}
-                                            onMouseLeave={() => setPlay((prev) => ({ ...prev, wakieIcon: false }))}
-                                        >
-                                            <div className='relative top-[2px]'>
-                                                <Lottie
-                                                    animationData={wakieIcon}
-                                                    play={play.wakieIcon}
-                                                    speed={0.5}
-                                                    style={{ width: 28, height: 28 }}
-                                                    loop={play.wakieIcon}
-                                                />
-                                            </div>
-                                            <p className='group-hover:text-primary trans relative top-[1px] text-secondary font-secondary font-semibold trans text-sm'>+8801689-201370</p>
-                                        </a>
-                                    </li>
+                                    <DetailsItem
+                                        playIcon={play.wakieIcon}
+                                        lottieIcon={wakieIcon}
+                                        text={mobileNumber}
+                                        href={`tel:${mobileNumber}`}
+                                        onMouseEnter={() => setPlay((prev: any) => ({ ...prev, wakieIcon: true }))}
+                                        onMouseLeave={() => setPlay((prev: any) => ({ ...prev, wakieIcon: false }))}
+                                    />
 
-                                    <li className='py-3'>
-                                        <a href={`mailto:${emailAcc}`} className='flex items-center gap-1 group'
-                                            onMouseEnter={() => setPlay((prev) => ({ ...prev, emailIcon: true }))}
-                                            onMouseLeave={() => setPlay((prev) => ({ ...prev, emailIcon: false }))}
-                                        >
-                                            <div className='relative top-[2px]'>
-                                                <Lottie
-                                                    animationData={emailIcon}
-                                                    play={play.emailIcon}
-                                                    speed={0.5}
-                                                    style={{ width: 28, height: 28 }}
-                                                    loop={play.emailIcon}
-                                                />
-                                            </div>
-                                            <p className='group-hover:text-primary trans relative top-[1px] text-secondary font-secondary font-semibold trans text-sm'>{emailAcc}</p>
-                                        </a>
-                                    </li>
+                                    <DetailsItem
+                                        playIcon={play.emailIcon}
+                                        lottieIcon={emailIcon}
+                                        text={emailAcc}
+                                        href={`mailto:${emailAcc}`}
+                                        onMouseEnter={() => setPlay((prev: any) => ({ ...prev, emailIcon: true }))}
+                                        onMouseLeave={() => setPlay((prev: any) => ({ ...prev, emailIcon: false }))}
+                                        mainCss='py-3'
+                                    />
 
-                                    <li className='py-0'>
-                                        <a href={`mailto:${emailAcc}`} className='flex items-center gap-1 group'
-                                            onMouseEnter={() => setPlay((prev) => ({ ...prev, locationIcon: true }))}
-                                            onMouseLeave={() => setPlay((prev) => ({ ...prev, locationIcon: false }))}
-                                        >
-                                            <div className='relative top-[2px]'>
-                                                <Lottie
-                                                    animationData={locationIcon}
-                                                    play={play.locationIcon}
-                                                    speed={0.5}
-                                                    style={{ width: 28, height: 28 }}
-                                                    loop={play.locationIcon}
-                                                />
-                                            </div>
-                                            <p className='group-hover:text-primary trans relative top-[1px] text-secondary font-secondary font-semibold trans text-sm'>{address}</p>
-                                        </a>
-                                    </li>
+                                    <DetailsItem
+                                        playIcon={play.locationIcon}
+                                        lottieIcon={locationIcon}
+                                        text={address}
+                                        href={`https://goo.gl/maps/ogEDWsXRYS4zx26RA`}
+                                        onMouseEnter={() => setPlay((prev: any) => ({ ...prev, locationIcon: true }))}
+                                        onMouseLeave={() => setPlay((prev: any) => ({ ...prev, locationIcon: false }))}
+                                        target={true}
+                                    />
+
                                 </ul>
                             </div>
                         </div>
@@ -131,17 +105,15 @@ const Footer = (props: Props) => {
                     </div>
 
 
-
                     <hr className="md:my-6 my-4 border-primary-300" />
 
-                    <div className="w-full px-4 mx-auto text-center">
 
+                    <div className="w-full px-4 mx-auto text-center">
                         <Typography variant="body2" gutterBottom className="py-1 uppercase">
                             Copyright ©
                             <span id="get-current-year">{new Date().getFullYear()}</span>
                             <span className='text-primary-300'> Soumik Ahammed</span>
                         </Typography>
-
                     </div>
 
 
