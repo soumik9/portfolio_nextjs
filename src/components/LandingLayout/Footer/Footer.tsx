@@ -1,10 +1,7 @@
-import FacebookIcon from '@components/Icons/socials/FacebookIcon'
-import { address, emailAcc, footerUserfulItems, mobileNumber, socialItems } from '@config/constants'
+import { address, emailAcc, encodedAdress, encodedEmail, footerUserfulItems, mobileNumber, socialItems } from '@config/constants'
 import { navItemType } from '@config/types/types'
 import { Typography } from '@mui/material'
-import Link from 'next/link'
 import React, { useState } from 'react'
-import Lottie from 'react-lottie-player'
 import { cx } from 'src/hooks/helpers'
 import FooterLinksDiv from './partials/FooterLinksDiv'
 import wakieIcon from '../../../../public/json/walkie.json'
@@ -12,13 +9,28 @@ import emailIcon from '../../../../public/json/email.json'
 import locationIcon from '../../../../public/json/location.json'
 import DesktopFollowMe from './partials/DesktopFollowMe'
 import DetailsItem from './partials/DetailsItem'
+import { useRouter } from 'next/router'
 
 type Props = {}
 
 const Footer = (props: Props) => {
 
+    const router = useRouter();
+
     // states
     const [play, setPlay] = useState({ wakieIcon: false, emailIcon: false, locationIcon: false });
+
+    const sendMail = () => {
+        router.push('mailto:'.concat(atob(encodedEmail)));
+    };
+
+    const phoneCall = () => {
+        router.push('tel:'.concat(atob(encodedEmail)));
+    };
+
+    const adressFind = () => {
+        router.push(atob(encodedAdress));
+    };
 
     return (
         <>
@@ -67,13 +79,13 @@ const Footer = (props: Props) => {
 
                             <div className='mt-8 md:mt-0 text-center md:text-start'>
                                 <span className="block uppercase text-sm font-semibold lg:text-white text-primary">Details</span>
-                                <ul className="mt-4 flex flex-col items-center md:items-start">
 
+                                <ul className="mt-4 flex flex-col items-center md:items-start">
                                     <DetailsItem
                                         playIcon={play.wakieIcon}
                                         lottieIcon={wakieIcon}
-                                        text={mobileNumber}
-                                        href={`tel:${mobileNumber}`}
+                                        text={'Call Me'}
+                                        onClick={phoneCall}
                                         onMouseEnter={() => setPlay((prev: any) => ({ ...prev, wakieIcon: true }))}
                                         onMouseLeave={() => setPlay((prev: any) => ({ ...prev, wakieIcon: false }))}
                                     />
@@ -81,8 +93,8 @@ const Footer = (props: Props) => {
                                     <DetailsItem
                                         playIcon={play.emailIcon}
                                         lottieIcon={emailIcon}
-                                        text={emailAcc}
-                                        href={`mailto:${emailAcc}`}
+                                        text={'Email Me'}
+                                        onClick={sendMail}
                                         onMouseEnter={() => setPlay((prev: any) => ({ ...prev, emailIcon: true }))}
                                         onMouseLeave={() => setPlay((prev: any) => ({ ...prev, emailIcon: false }))}
                                         mainCss='py-3'
@@ -91,8 +103,8 @@ const Footer = (props: Props) => {
                                     <DetailsItem
                                         playIcon={play.locationIcon}
                                         lottieIcon={locationIcon}
-                                        text={address}
-                                        href={`https://goo.gl/maps/ogEDWsXRYS4zx26RA`}
+                                        text={'Find My Location'}
+                                        onClick={adressFind}
                                         onMouseEnter={() => setPlay((prev: any) => ({ ...prev, locationIcon: true }))}
                                         onMouseLeave={() => setPlay((prev: any) => ({ ...prev, locationIcon: false }))}
                                         target={true}

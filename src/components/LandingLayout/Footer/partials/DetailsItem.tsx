@@ -3,7 +3,7 @@ import Lottie from 'react-lottie-player';
 import { cx } from 'src/hooks/helpers';
 
 type Props = {
-    href: string;
+    href?: string;
     text: string;
     lottieIcon: any;
     playIcon: any;
@@ -11,16 +11,18 @@ type Props = {
     onMouseLeave: any;
     onMouseEnter: any;
     target?: boolean;
+    onClick?: any;
 }
 
 const DetailsItem = ({
-    href, lottieIcon, playIcon, text, mainCss, onMouseLeave, onMouseEnter, target
+    href, lottieIcon, playIcon, text, mainCss, onMouseLeave, onMouseEnter, target, onClick
 }: Props) => {
     return (
         <li className={cx(mainCss)}>
-            <a href={href} className='flex items-center gap-1 group' target={target ? '_blank' : ''} rel='noreferrer'
+            <a href={href} className='flex items-center gap-1 group cursor-pointer' target={target ? '_blank' : ''} rel='noreferrer'
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
+                onClick={onClick}
             >
                 <div className='relative top-[2px]'>
                     <Lottie
