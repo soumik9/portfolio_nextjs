@@ -78,7 +78,7 @@ const Footer = (props: Props) => {
                             </div>
 
                             <div className='mt-8 md:mt-0 text-center md:text-start'>
-                                <span className="block uppercase text-sm font-semibold lg:text-white text-primary">Details</span>
+                                <span className="block uppercase text-sm font-semibold lg:text-white text-primary">Get in touch</span>
 
                                 <ul className="mt-4 flex flex-col items-center md:items-start">
                                     <DetailsItem
