@@ -13,6 +13,7 @@ export const twitterUrl: string = "tw";
 export const instagramUrl: string = "ins";
 export const linkedinUrl: string = "https://www.linkedin.com/in/soumik9/";
 export const githubUrl: string = "https://github.com/soumik9";
+export const address: string = "Naogaon, Rajshahi, Bangladesh";
 
 export const homeUrl: string = "/";
 export const aboutUrl: string = "/about";

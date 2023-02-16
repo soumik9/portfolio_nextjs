@@ -15,7 +15,9 @@ export default function Home() {
         hii
       </LandingLayout> */}
 
-      ami
+      <div className='container'>
+        ami
+      </div>
     </>
   )
 }
