@@ -14,7 +14,7 @@ const DesktopFollowMe = (props: Props) => {
                 Follow me on
             </Typography>
 
-            <div className="line w-[4rem] h-[3px] bg-white mx-[1rem] scale-x-[0.2] origin-left transition-[transform_0.5s] group-hover:scale-x-[1]">
+            <div className="line w-[4rem] h-[2px] bg-secondary mx-[1rem] scale-x-[0.2] origin-left transition-[transform_0.5s] group-hover:scale-x-[1]">
 
             </div>
 
