@@ -34,7 +34,7 @@ const Footer = (props: Props) => {
 
     return (
         <>
-            <footer className="bg-lightDark pt-10 pb-4">
+            <footer className="bg-bgDark pt-10 pb-4">
                 <div className="container">
 
                     <div className="grid xll:grid-cols-[61%_39%] 3xll:grid-cols-2">
@@ -70,7 +70,7 @@ const Footer = (props: Props) => {
 
                         <div className='grid md:grid-cols-2 mt-0 md:mt-9 lg:mt-0'>
 
-                            <div className='mt-7 md:mt-0 text-center md:text-start'>
+                            <div className='mt-7 md:mt-0 flex flex-col items-center md:block'>
                                 <FooterLinksDiv
                                     title='Useful Links'
                                     array={footerUserfulItems}

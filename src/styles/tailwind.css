@@ -13,3 +13,11 @@
 .trans {
     @apply transition ease-in-out duration-300;
 }
+
+.heading-h1 {
+    @apply xll:text-[62px] xll:leading-[160%] md:text-[42px] text-[32px] leading-[150%] xll:font-bold font-semibold tracking-[1px];
+}
+
+.heading-h5 {
+    @apply xll:text-[18px] xll:leading-[160%] md:text-[16px] text-[14px] leading-[150%] xll:font-semibold font-medium tracking-[1px];
+}

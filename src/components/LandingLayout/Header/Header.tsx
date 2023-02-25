@@ -31,7 +31,7 @@ const Header = (props: Props) => {
         <>
             <div
                 className={cx(
-                    " py-2 w-full z-[999]  bg-lightDark shadow-[15px_-1px_10px_rgba(166,166,166,0.25)] fixed top-0 left-0"
+                    " py-2 w-full z-[999] bg-bgDark shadow-[15px_-1px_10px_rgba(166,166,166,0.25)] fixed top-0 left-0"
                 )}
             >
                 <div className="container">

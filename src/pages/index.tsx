@@ -1,7 +1,8 @@
 
+import Home from '@views/landing/Home/Home'
 import Head from 'next/head'
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <Head>
@@ -11,13 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <LandingLayout>
-        hii
-      </LandingLayout> */}
-
-      <div className='container'>
-        ami
-      </div>
+      <Home />
     </>
   )
 }

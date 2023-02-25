@@ -22,6 +22,7 @@ module.exports = {
         secondary: '#D5D2E4',
 
         lightDark: "#1A1826",
+        bgDark: "#0A090F",
 
         smartian: '#3c6382'
       },
