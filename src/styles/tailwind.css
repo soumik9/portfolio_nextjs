@@ -15,9 +15,21 @@
 }
 
 .heading-h1 {
-    @apply xll:text-[62px] xll:leading-[160%] md:text-[42px] text-[32px] leading-[150%] xll:font-bold font-semibold tracking-[1px];
+    @apply xll:text-[62px] md:text-[42px] text-[32px] font-semibold tracking-wide xll:leading-[120%] md:leading-[125%];
+}
+
+.heading-h2 {
+    @apply xll:text-[56px] md:text-[36px] text-[28px] font-semibold xll:leading-[120%] md:leading-[125%];
+}
+
+.heading-h3 {
+    @apply xll:text-[48px] md:text-[32px] text-[24px] font-semibold xll:leading-[120%] md:leading-[125%];
 }
 
 .heading-h5 {
     @apply xll:text-[18px] xll:leading-[160%] md:text-[16px] text-[14px] leading-[150%] xll:font-semibold font-medium tracking-[1px];
+}
+
+.p-text{
+    @apply lg:text-[16px] text-[14px] lg:leading-[120%] leading-[125%]
 }

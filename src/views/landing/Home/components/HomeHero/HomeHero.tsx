@@ -1,10 +1,24 @@
 import SectionLayout from '@components/ViewsComp/SectionLayout/SectionLayout'
+import { summaryItems } from '@config/constants'
+import { summaryItemType } from '@config/types/types'
+import { gsap, Power3 } from 'gsap'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import SumItem from './partials/SumItem'
+
 
 type Props = {}
 
 const HomeHero = (props: Props) => {
+
+    let mainCon = useRef(null);
+
+    useEffect(() => {
+        // gsap.to('.main', { opacity: 1, y: 220, x: 0, duration: 2, ease: 'Power3.inOut' })
+        // gsap.from(mainCon, { opacity: 0, x: 100, y: 0, duration: 1 });
+        // gsap.to(mainCon, { opacity: 1, x: 0, y: 0, duration: 1 });
+    }, [])
+
     return (
         <SectionLayout>
 
@@ -20,14 +34,23 @@ const HomeHero = (props: Props) => {
                 </div>
             </div>
 
-            <div className="bg-lightDark lg:p-[100px_50px] md:py-[80px] p-[50px_30px] rounded-sm relative w-full">
+            <div className="bg-lightDark lg:p-[60px_50px] md:p-[40px] p-[40px_15px] rounded-sm relative w-full">
 
                 <h5 className='heading-h5 text-secondary uppercase '>👋 Designing things for human</h5>
 
-                <h1 className='mt-[12px] heading-h1  text-secondary'>
+                <h1 className='mt-[12px] heading-h1 text-secondary font-secondary'>
                     Talented Designer <br />
                     <span className='text-primary'>That Help you</span>
                 </h1>
+
+                <hr className='my-8 bg-bgDark border-none h-[2px]' />
+
+                <div className='grid grid-cols-2 md:flex gap-[40px] md:gap-x-[55px] lg:gap-[100px]'>
+                    {summaryItems.map((item: summaryItemType) => <SumItem
+                        data={item}
+                        key={item._id}
+                    />)}
+                </div>
 
             </div>
 
@@ -37,10 +60,10 @@ const HomeHero = (props: Props) => {
                 height={612}
                 alt='Soumik Ahammed'
                 className='
-                3xl:w-[370px] xll:w-[350px] lg:w-[300px] w-[270px] 
                 md:absolute hidden md:block
-                3xl:right-[19.8rem] xll:right-[4.9rem] lg:right-[2rem] -right-1
-                3xl:top-[4.5rem] lg:top-[6rem] top-[3.5rem]'
+                3xl:w-[360px] xll:w-[370px] lg:w-[310px] w-[270px] 
+                3xl:right-[20rem] xll:right-[4.9rem] lg:right-[2rem] right-0
+                3xl:top-[5.55rem] xll:top-[4.7rem] lg:top-[5.9rem] md:top-[4.3rem] top-[3.5rem]'
             />
         </SectionLayout>
     )

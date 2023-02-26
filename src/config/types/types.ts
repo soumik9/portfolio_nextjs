@@ -4,3 +4,9 @@ export type navItemType = {
     title: string;
     icon?: React.ReactNode;
 }
+
+export type summaryItemType = {
+    _id: string;
+    count: string;
+    title: string;
+}

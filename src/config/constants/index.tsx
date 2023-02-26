@@ -3,7 +3,7 @@ import FacebookIcon from "@components/Icons/socials/FacebookIcon";
 import Github from "@components/Icons/socials/Github";
 import LinkedinIcon from "@components/Icons/socials/LinkedinIcon";
 import WhatsappIcon from "@components/Icons/socials/WhatsappIcon";
-import { navItemType } from "../types/types";
+import { navItemType, summaryItemType } from "../types/types";
 
 // contact info
 export const mobileNumber: string = "+8801689-201370";
@@ -74,6 +74,24 @@ export const navSocialItems: navItemType[] = [
     },
 ]
 
+export const summaryItems: summaryItemType[] = [
+    {
+        _id: 'summ_1',
+        count: '20+',
+        title: 'Project Completed',
+    },
+    {
+        _id: 'summ_2',
+        count: '7+',
+        title: 'Global Clients',
+    },
+    {
+        _id: 'summ_3',
+        count: '2+',
+        title: 'Years Experience',
+    },
+]
+
 export const socialItems: navItemType[] = [
     {
         _id: 'socialItem_1',
@@ -106,6 +124,7 @@ export const socialItems: navItemType[] = [
         icon: <EmailIcon />,
     },
 ]
+
 export const footerUserfulItems: navItemType[] = [
     {
         _id: 'footUseful_1',

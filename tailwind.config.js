@@ -28,7 +28,8 @@ module.exports = {
       },
       fontFamily: {
         primary: ["Andika", "sans-serif"],
-        secondary: ["Lato", "sans-serif"],
+        // secondary: ["Lato", "sans-serif"],
+        secondary: ["Golos Text", "sans-serif"],
       },
     },
     screens: {
