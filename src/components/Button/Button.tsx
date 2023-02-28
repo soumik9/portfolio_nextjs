@@ -14,6 +14,7 @@ const Button = ({ outlined }: Props) => {
                     'button-arounder p-[16px_24px] text-[18px]   focus:bg-smartian hover:bg-primary-700',
                     outlined ? 'bg-white text-primary border border-primary focus:text-white hover:text-white ' : 'bg-primary text-white border-none'
                 )}
+                aria-label='Hover Button'
             >
                 Hover Me
             </button>

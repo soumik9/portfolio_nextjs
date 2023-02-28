@@ -59,7 +59,7 @@ const Footer = (props: Props) => {
                                     {socialItems.map((item: navItemType, index: number) => <li key={`footerSocialMob${index}`} className={cx(
                                         '',
                                     )}>
-                                        <a href={item.url} target='_blank' rel='noreferrer'>
+                                        <a href={item.url} target='_blank' rel='noreferrer' aria-label={item.title}>
                                             {item.icon}
                                         </a>
                                     </li>)}

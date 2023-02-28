@@ -19,10 +19,15 @@ const DetailsItem = ({
 }: Props) => {
     return (
         <li className={cx(mainCss)}>
-            <a href={href} className='flex items-center gap-1 group cursor-pointer' target={target ? '_blank' : ''} rel='noreferrer'
+            <a
+                href={href}
+                className='flex items-center gap-1 group cursor-pointer'
+                target={target ? '_blank' : ''}
+                rel='noreferrer'
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
                 onClick={onClick}
+                aria-label={text}
             >
                 <div className='relative top-[2px]'>
                     <Lottie

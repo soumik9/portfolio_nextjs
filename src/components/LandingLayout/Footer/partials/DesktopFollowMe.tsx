@@ -23,7 +23,7 @@ const DesktopFollowMe = (props: Props) => {
                     'footer-social-item group-hover:opacity-[1] group-hover:translate-y-0',
                     index === 4 && 'relative -top-1'
                 )}>
-                    <a href={item.url} target='_blank' rel='noreferrer'>
+                    <a href={item.url} target='_blank' rel='noreferrer' aria-label={item.title}>
                         {item.icon}
                     </a>
                 </li>)}

@@ -28,6 +28,7 @@ const MobileNavItem = ({ item, setShowSideNav }: Props) => {
                         route === item.url ? "text-primary-300 bg-lightDark" : "bg-transparent text-lightDark",
                     )}
                     href="#"
+                    aria-label={item.title}
                     onClick={() => setShowSideNav(false)}
                 >
                     {item.title}

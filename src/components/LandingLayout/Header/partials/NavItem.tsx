@@ -26,7 +26,8 @@ const NavItem = ({ item, index, last }: Props) => {
                         route === item.url &&
                         "!text-primary hover:text-primary-400 before:content-[''] before:absolute before:bottom-[20px] before:border-[1px] before:border-primary before:w-[30%] before:left-2",
                     )}
-                    href=""
+                    href="#"
+                    aria-label={item.title}
                 >
                     {item.title}
                 </a>

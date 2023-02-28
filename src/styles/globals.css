@@ -29,6 +29,11 @@ span {
 }
 
 
+/* slick slider css */
+.slick-dots button::before {
+  color: #E7BD8D !important;
+}
+
 
 .button-arounder {
   box-shadow: 0 0px 0px hsla(190deg, 15%, 5%, .2);

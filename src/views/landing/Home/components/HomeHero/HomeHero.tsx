@@ -1,7 +1,7 @@
 import SectionLayout from '@components/ViewsComp/SectionLayout/SectionLayout'
 import { summaryItems } from '@config/constants'
 import { summaryItemType } from '@config/types/types'
-import { gsap, Power3 } from 'gsap'
+// import { gsap, Power3 } from 'gsap'
 import Image from 'next/image'
 import React, { useEffect, useRef } from 'react'
 import SumItem from './partials/SumItem'
@@ -45,7 +45,7 @@ const HomeHero = (props: Props) => {
 
                 <hr className='my-8 bg-bgDark border-none h-[2px]' />
 
-                <div className='grid grid-cols-2 md:flex gap-[40px] md:gap-x-[55px] lg:gap-[100px]'>
+                <div className='grid grid-cols-2 md:flex gap-[40px] md:gap-x-[55px] lg:gap-x-[65px] xll:gap-[100px]'>
                     {summaryItems.map((item: summaryItemType) => <SumItem
                         data={item}
                         key={item._id}

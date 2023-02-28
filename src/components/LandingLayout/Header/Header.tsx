@@ -40,7 +40,11 @@ const Header = (props: Props) => {
                         <div className='flex gap-[40px] items-center'>
                             {/* <HeaderLogo /> */}
                             <Link href={homeUrl} legacyBehavior>
-                                <a className='h-[40px] w-[40px] bg-primary flex items-center justify-center rounded-[8px]'>
+                                <a
+                                    href='#'
+                                    aria-label='Soumik Ahammed'
+                                    className='h-[40px] w-[40px] bg-primary flex items-center justify-center rounded-[8px]'
+                                >
                                     <span className='text-[32px] text-lightDark'>S</span>
                                 </a>
                             </Link>
@@ -60,7 +64,12 @@ const Header = (props: Props) => {
                         </div>
 
                         <div className='hidden lg:flex gap-2'>
-                            <a href={githubUrl} target='_blank' rel="noreferrer" className='flex items-center gap-1 group'
+                            <a
+                                href={githubUrl}
+                                target='_blank'
+                                rel="noreferrer"
+                                className='flex items-center gap-1 group'
+                                aria-label='Github'
                                 onMouseEnter={() => setPlay((prev) => ({ ...prev, sIcon: true }))}
                                 onMouseLeave={() => setPlay((prev) => ({ ...prev, sIcon: false }))}
                             >
@@ -89,7 +98,11 @@ const Header = (props: Props) => {
                         </div>
 
                         <div className={`lg:hidden flex items-center justify-center ${showSideNav && "ml-[7px]"}`} >
-                            <button className="outline-none" onClick={handleSideNav}>
+                            <button
+                                className="outline-none"
+                                onClick={handleSideNav}
+                                aria-label='Humburger/Cross Button'
+                            >
                                 {showSideNav ? <Cross /> : <Hamburger />}
                             </button>
                         </div>
