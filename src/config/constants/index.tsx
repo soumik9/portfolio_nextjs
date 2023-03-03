@@ -3,7 +3,7 @@ import FacebookIcon from "@components/Icons/socials/FacebookIcon";
 import Github from "@components/Icons/socials/Github";
 import LinkedinIcon from "@components/Icons/socials/LinkedinIcon";
 import WhatsappIcon from "@components/Icons/socials/WhatsappIcon";
-import { navItemType, summaryItemType } from "../types/types";
+import { hrResType, navItemType, reviewSliderType, summaryItemType } from "../types/types";
 
 // contact info
 export const mobileNumber: string = "+8801689-201370";
@@ -140,5 +140,47 @@ export const footerUserfulItems: navItemType[] = [
         _id: 'footUseful_3',
         title: 'Contact Me',
         url: contactUrl,
+    },
+]
+
+export const hrSummaryItems: hrResType[] = [
+    {
+        _id: 'hrSum_1',
+        percentage: '100%',
+        title: 'Satisfation Rate',
+    },
+    {
+        _id: 'hrSum_2',
+        percentage: '100%',
+        title: 'Satisfation Rate',
+    },
+    {
+        _id: 'hrSum_3',
+        percentage: '5',
+        title: 'Google Review',
+    },
+]
+
+export const reviewSlidersData: reviewSliderType[] = [
+    {
+        _id: 'reviewsSlider_1',
+        img: '',
+        review: 'Aenean imperdiet. Donec vitae orci sed dolor rutrum auctor. Maecenas egestas arcu quis ligula mattis placerat. Vivamus aliquet elit ac nisl. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo.',
+        name: 'Lorem Ispum',
+        position: 'CEO',
+    },
+    {
+        _id: 'reviewsSlider_2',
+        img: '',
+        review: '100%',
+        name: 'Aenean imperdiet. Donec vitae orci sed dolor rutrum auctor. Maecenas egestas arcu quis ligula mattis placerat. Vivamus aliquet elit ac nisl. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo.',
+        position: 'CEO',
+    },
+    {
+        _id: 'reviewsSlider_3',
+        img: '',
+        review: '100%',
+        name: 'Aenean imperdiet. Donec vitae orci sed dolor rutrum auctor. Maecenas egestas arcu quis ligula mattis placerat. Vivamus aliquet elit ac nisl. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo.',
+        position: 'CEO',
     },
 ]

@@ -8,7 +8,7 @@ type Props = {
 
 const SectionTop = ({ titleSpan, title, subTitle }: Props) => {
     return (
-        <center>
+        <center className='mb-[40px] lg:mb-[60px]'>
             <h5 className='heading-h5 text-secondary uppercase'>{subTitle}</h5>
             <h1 className='mt-[12px] heading-h1 text-secondary font-secondary capitalize'>
                 {title} <span className='text-primary'>{titleSpan}</span>

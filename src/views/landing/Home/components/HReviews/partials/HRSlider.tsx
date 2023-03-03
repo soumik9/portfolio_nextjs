@@ -27,7 +27,9 @@ const HRSlider = (props: Props) => {
             >
                 {slides.map((slideContent, index) => (
                     <SwiperSlide key={slideContent} virtualIndex={index}>
-                        {slideContent}
+                        <div className='bg-lightDark p-[60px]'>
+                            {slideContent}
+                        </div>
                     </SwiperSlide>
                 ))}
             </Swiper>

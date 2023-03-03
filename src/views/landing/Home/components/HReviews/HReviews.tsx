@@ -15,15 +15,16 @@ const HReviews = (props: Props) => {
                 titleSpan='talking'
             />
 
-            <div className='mt-[40px]'>
-                <div className="grid grid-cols-3">
-                    <div className='col-span-2'>
-                        <HRSlider />
-                    </div>
+            <div className="grid grid-cols-3 gap-[60px]">
+                <div className='col-span-2'>
+                    <HRSlider />
+                </div>
 
+                <div>
                     <HRSummary />
                 </div>
             </div>
+
         </SectionLayout>
     )
 }

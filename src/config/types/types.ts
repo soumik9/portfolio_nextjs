@@ -10,3 +10,17 @@ export type summaryItemType = {
     count: string;
     title: string;
 }
+
+export type hrResType = {
+    _id: string;
+    percentage: string;
+    title: string;
+}
+
+export type reviewSliderType = {
+    _id: string;
+    review: string;
+    img: string;
+    name: string;
+    position: string;
+}
