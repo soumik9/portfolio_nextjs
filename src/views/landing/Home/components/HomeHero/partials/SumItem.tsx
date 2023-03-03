@@ -9,10 +9,10 @@ type Props = {
 const SumItem = ({ data }: Props) => {
     return (
         <div className={cx(
-            'text-center',
+            'text-center md:text-start',
             data._id === 'summ_3' && 'col-span-2'
         )}>
-            <h1 className='heading-h1 md:heading-h3 text-secondary font-secondary tracking-[0.1em]'>{data.count}</h1>
+            <h3 className='heading-h3 text-secondary font-secondary tracking-[0.1em]'>{data.count}</h3>
             <p className='text-purple p-text'>{data.title}</p>
         </div>
     )

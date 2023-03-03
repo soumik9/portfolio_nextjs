@@ -17,7 +17,6 @@ const HomeHero = (props: Props) => {
         // gsap.to('.main', { opacity: 1, y: 220, x: 0, duration: 2, ease: 'Power3.inOut' })
         // gsap.from(mainCon, { opacity: 0, x: 100, y: 0, duration: 1 });
         // gsap.to(mainCon, { opacity: 1, x: 0, y: 0, duration: 1 });
-        // cj
     }, [])
 
     return (
