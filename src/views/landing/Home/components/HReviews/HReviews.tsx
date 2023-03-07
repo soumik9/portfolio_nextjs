@@ -7,6 +7,8 @@ import HRSummary from './partials/HRSummary'
 type Props = {}
 
 const HReviews = (props: Props) => {
+
+    // idk
     return (
         <SectionLayout>
             <SectionTop
