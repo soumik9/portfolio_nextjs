@@ -36,10 +36,10 @@ const HomeHero = (props: Props) => {
 
             <div className="bg-lightDark lg:p-[60px_50px] md:p-[40px] p-[40px_15px] rounded-sm relative w-full">
 
-                <h5 className='heading-h5 text-secondary uppercase '>👋 Designing things for human</h5>
+                <h5 className='heading-h5 text-secondary uppercase '>👋 Develop high-quality websites</h5>
 
                 <h1 className='mt-[12px] heading-h1 text-secondary font-secondary'>
-                    Talented Designer <br />
+                    Talented Developer <br />
                     <span className='text-primary'>That Help you</span>
                 </h1>
 

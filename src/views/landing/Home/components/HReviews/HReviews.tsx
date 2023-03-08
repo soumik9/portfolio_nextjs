@@ -10,9 +10,9 @@ const HReviews = (props: Props) => {
 
     // idk
     return (
-        <SectionLayout>
+        <SectionLayout css='!pb-[100px]'>
             <SectionTop
-                subTitle='👌 People Say about me'
+                subTitle='👌 What Customers Have to Say'
                 title='Clients'
                 titleSpan='talking'
             />

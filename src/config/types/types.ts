@@ -23,4 +23,5 @@ export type reviewSliderType = {
     img: string;
     name: string;
     position: string;
+    rating: number;
 }
