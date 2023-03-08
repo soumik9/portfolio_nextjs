@@ -1,34 +1,38 @@
 import React from 'react'
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
+import { reviewSlidersData } from '@config/constants';
+import Image from 'next/image';
 // import "swiper/css/pagination";
 // import { Pagination } from "swiper";
 
 type Props = {}
 
 const HRSlider = (props: Props) => {
-
-    const slides = Array.from({ length: 1000 }).map(
-        (el, index) => `Slide ${index + 1}`
-    );
-
     return (
-        <div className='text-purple'>
+        <div className=''>
             <Swiper
-                spaceBetween={50}
+                spaceBetween={40}
                 slidesPerView={2}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
             // pagination={true}
             // modules={[Pagination]}
             >
-                {slides.map((slideContent, index) => (
-                    <SwiperSlide key={slideContent} virtualIndex={index}>
-                        <div className='bg-lightDark p-[60px]'>
-                            {slideContent}
+                {reviewSlidersData.map((slideContent, index) => (
+                    <SwiperSlide key={slideContent._id} virtualIndex={index}>
+                        <div className='bg-lightDark p-[49px_40px] rounded-sm'>
+                            <p className='leading-[160%] text-purple'>{slideContent.review}</p>
+
+                            <div className='mt-8 flex items-center gap-8'>
+                                <div className='border border-primary w-max rounded-full'>
+                                    <Image src={slideContent.img} width={60} height={60} alt={slideContent.name} />
+                                </div>
+                                <div>
+                                    <h6 className='text-primary'>{slideContent.name}</h6>
+                                    <p className='text-secondary'>{slideContent.position}</p>
+                                </div>
+                            </div>
                         </div>
                     </SwiperSlide>
                 ))}

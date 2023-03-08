@@ -164,23 +164,23 @@ export const hrSummaryItems: hrResType[] = [
 export const reviewSlidersData: reviewSliderType[] = [
     {
         _id: 'reviewsSlider_1',
-        img: '',
+        img: '/global/avatar.png',
         review: 'Aenean imperdiet. Donec vitae orci sed dolor rutrum auctor. Maecenas egestas arcu quis ligula mattis placerat. Vivamus aliquet elit ac nisl. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo.',
         name: 'Lorem Ispum',
         position: 'CEO',
     },
     {
         _id: 'reviewsSlider_2',
-        img: '',
-        review: '100%',
-        name: 'Aenean imperdiet. Donec vitae orci sed dolor rutrum auctor. Maecenas egestas arcu quis ligula mattis placerat. Vivamus aliquet elit ac nisl. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo.',
+        img: '/global/avatar.png',
+        name: 'Lorem Ispum',
+        review: 'Aenean imperdiet. Donec vitae orci sed dolor rutrum auctor. Maecenas egestas arcu quis ligula mattis placerat. Vivamus aliquet elit ac nisl. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo.',
         position: 'CEO',
     },
     {
         _id: 'reviewsSlider_3',
-        img: '',
-        review: '100%',
-        name: 'Aenean imperdiet. Donec vitae orci sed dolor rutrum auctor. Maecenas egestas arcu quis ligula mattis placerat. Vivamus aliquet elit ac nisl. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo.',
+        img: '/global/avatar.png',
+        name: 'Lorem Ispum',
+        review: 'Aenean imperdiet. Donec vitae orci sed dolor rutrum auctor. Maecenas egestas arcu quis ligula mattis placerat. Vivamus aliquet elit ac nisl. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo.',
         position: 'CEO',
     },
 ]

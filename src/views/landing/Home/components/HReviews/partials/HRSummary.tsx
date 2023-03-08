@@ -12,7 +12,7 @@ const HRSummary = (props: Props) => {
                 'pb-8 border-b border-secondary',
                 index !== 0 && 'pt-5'
             )}>
-                <h3 className='heading-h3 text-secondary font-secondary tracking-[0.1em]'>{item.percentage}</h3>
+                <h3 className='heading-h3 text-secondary tracking-[0.1em]'>{item.percentage}</h3>
                 <p className='text-purple p-text'>{item.title}</p>
             </div>)}
         </>
