@@ -17,8 +17,8 @@ const HReviews = (props: Props) => {
                 titleSpan='talking'
             />
 
-            <div className="grid grid-cols-3 gap-[60px]">
-                <div className='col-span-2'>
+            <div className="grid md:grid-cols-3 gap-[60px]">
+                <div className='md:col-span-2'>
                     <HRSlider />
                 </div>
 

@@ -39,6 +39,10 @@ h6 {
 
 
 /* slick slider css */
+.slick_case_slider .slick-track {
+  display: flex;
+}
+
 .slick-dots button::before {
   color: #E7BD8D !important;
 }
