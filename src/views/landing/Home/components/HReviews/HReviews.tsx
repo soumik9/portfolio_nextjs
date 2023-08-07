@@ -26,7 +26,6 @@ const HReviews = (props: Props) => {
                     <HRSummary />
                 </div>
             </div>
-
         </SectionLayout>
     )
 }

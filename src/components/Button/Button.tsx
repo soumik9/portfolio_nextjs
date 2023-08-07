@@ -1,25 +1,26 @@
 
-import React from 'react'
+import React, { ButtonHTMLAttributes } from 'react'
 import { cx } from 'src/hooks/helpers'
 
 type Props = {
+    text: string | React.ReactNode;
+    classes?: string;
     outlined?: boolean;
-}
+    startIcon?: React.ReactNode;
+    endIcon?: React.ReactNode;
+} & ButtonHTMLAttributes<HTMLButtonElement>;
 
-const Button = ({ outlined }: Props) => {
+const Button = ({ outlined, text, classes, startIcon, endIcon }: Props) => {
     return (
-        <div className='my-10 container'>
-            <button
-                className={cx(
-                    'button-arounder p-[16px_24px] text-[18px]   focus:bg-smartian hover:bg-primary-700',
-                    outlined ? 'bg-white text-primary border border-primary focus:text-white hover:text-white ' : 'bg-primary text-white border-none'
-                )}
-                aria-label='Hover Button'
-            >
-                Hover Me
-            </button>
-        </div>
-
+        <button
+            className={cx(
+                classes,
+                'button-arounder p-[16px_24px] text-[18px] focus:bg-smartian rounded-sm font-medium',
+                outlined ? 'bg-white text-purple hover:text-purple-600 border border-primary focus:text-white' : 'bg-primary text-lightDark border-none'
+            )}
+        >
+            {startIcon ? startIcon : null} {text}  {endIcon ? endIcon : null}
+        </button>
     )
 }
 
