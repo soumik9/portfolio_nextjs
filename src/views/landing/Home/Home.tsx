@@ -14,7 +14,7 @@ const Home = (props: Props) => {
             <Intro />
             <Skills />
             <Services />
-            <HReviews />
+            {/* <HReviews /> */}
         </main>
     )
 }

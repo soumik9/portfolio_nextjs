@@ -1,6 +1,8 @@
 import LightDarkCardLayout from '@components/ViewsComp/LightDarkCardLayout/LightDarkCardLayout'
 import SectionLayout from '@components/ViewsComp/SectionLayout/SectionLayout'
 import SectionTop from '@components/ViewsComp/SectionTop/SectionTop'
+import { skillItems } from '@config/constants/skills'
+import { skillItemType } from '@config/types/types'
 import React from 'react'
 
 type Props = {}
@@ -14,24 +16,23 @@ const Skills = (props: Props) => {
                 titleSpan='Skills'
             />
 
-            <div className='grid grid-cols-2 gap-5'>
+            <div className=''>
                 <LightDarkCardLayout>
-                    <div className='f-center'>
+                    {/* <div className='f-center'>
                         <h3 className='text-secondary font-semibold text-[22px] border-b border-secondary w-max border-dashed'>
                             Frontend Technologies
                         </h3>
-                    </div>
+                    </div> */}
 
-                    <div>
-                        <div>
-                            HTML
-                        </div>
+                    <div className='flex gap-8 flex-wrap'>
+                        {skillItems.map((item: skillItemType) => <div key={item._id} className='flex gap-2 border border-dashed border-primary py-1.5 px-2.5 rounded'>
+                            {item.icon}
+                            <span className='font-semibold text-secondary'>{item.title} </span>
+                        </div>)}
                     </div>
                 </LightDarkCardLayout>
 
-                <LightDarkCardLayout>
-                    hi
-                </LightDarkCardLayout>
+
             </div>
         </SectionLayout>
     )

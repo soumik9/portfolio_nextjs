@@ -11,6 +11,12 @@ export type summaryItemType = {
     title: string;
 }
 
+export type skillItemType = {
+    _id: string;
+    title: string;
+    icon: React.ReactNode;
+}
+
 export type hrResType = {
     _id: string;
     percentage: string;
