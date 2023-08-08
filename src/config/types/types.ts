@@ -32,3 +32,9 @@ export type reviewSliderType = {
     position: string;
     rating: number;
 }
+
+export interface IService {
+    _id: string;
+    title: string;
+    lists: string[];
+}

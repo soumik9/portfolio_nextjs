@@ -47,7 +47,6 @@ h6 {
   color: #E7BD8D !important;
 }
 
-
 .button-arounder {
   box-shadow: 0 0px 0px hsla(190deg, 15%, 5%, .2);
 
@@ -74,4 +73,14 @@ h6 {
   border-top-right-radius: var(--radius);
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
+}
+
+.service {
+  border-radius: 0 0 0.7rem 0.7rem;
+  height: fit-content;
+}
+
+.service__header {
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
 }
