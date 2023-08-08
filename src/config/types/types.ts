@@ -38,3 +38,18 @@ export interface IService {
     title: string;
     lists: string[];
 }
+
+export interface IProjectLinks {
+    [key: string]: string;
+}
+export interface IProject {
+    _id: string;
+    title: string;
+    thumbnail: string;
+    images: string[];
+    links: IProjectLinks;
+    description: string;
+    features: string[];
+    frontendTechnologies: string[];
+    backendTechnologies: string[];
+}
