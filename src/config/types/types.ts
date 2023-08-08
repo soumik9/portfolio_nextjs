@@ -14,6 +14,7 @@ export type summaryItemType = {
 export type skillItemType = {
     _id: string;
     title: string;
+    isExpert: boolean;
     icon: React.ReactNode;
 }
 

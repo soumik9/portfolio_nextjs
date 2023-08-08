@@ -2,8 +2,9 @@ import LightDarkCardLayout from '@components/ViewsComp/LightDarkCardLayout/Light
 import SectionLayout from '@components/ViewsComp/SectionLayout/SectionLayout'
 import SectionTop from '@components/ViewsComp/SectionTop/SectionTop'
 import { skillItems } from '@config/constants/skills'
-import { skillItemType } from '@config/types/types'
 import React from 'react'
+import SkillMainCard from './partials/SkillMainCard'
+const parse = require('html-react-parser');
 
 type Props = {}
 
@@ -18,18 +19,18 @@ const Skills = (props: Props) => {
 
             <div className=''>
                 <LightDarkCardLayout>
-                    {/* <div className='f-center'>
-                        <h3 className='text-secondary font-semibold text-[22px] border-b border-secondary w-max border-dashed'>
-                            Frontend Technologies
-                        </h3>
-                    </div> */}
 
-                    <div className='flex gap-8 flex-wrap'>
-                        {skillItems.map((item: skillItemType) => <div key={item._id} className='flex gap-2 border border-dashed border-primary py-1.5 px-2.5 rounded'>
-                            {item.icon}
-                            <span className='font-semibold text-secondary'>{item.title} </span>
-                        </div>)}
-                    </div>
+                    <SkillMainCard
+                        title='Frontend & Backend'
+                        items={skillItems.slice(0, 16)}
+                    />
+
+                    <SkillMainCard
+                        title='Others'
+                        items={skillItems.slice(16)}
+                        classes='mt-14'
+                    />
+
                 </LightDarkCardLayout>
 
 
