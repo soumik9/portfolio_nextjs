@@ -48,9 +48,8 @@ export interface IProject {
     category: string;
     thumbnail: string;
     images: string[];
-    links: IProjectLinks;
+    links: IProjectLinks[];
     description: string;
     features: string[];
-    frontendTechnologies: string[];
-    backendTechnologies: string[];
+    techs: string[];
 }

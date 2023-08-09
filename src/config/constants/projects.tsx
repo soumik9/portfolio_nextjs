@@ -43,13 +43,20 @@ export const projectItems: IProject[] = [
         images: [
             'a'
         ],
-        links: {
-            clientLink: 'https://pc-crafts.vercel.app/',
-            clientGithub: 'https://github.com/soumik9/pc-crafts',
-            serverLink: 'https://pc-craft-server.vercel.app/',
-            serverGithhub: '',
-            reportLink: '',
-        },
+        links: [
+            {
+                name: 'Live Site',
+                link: 'https://pc-crafts.vercel.app/'
+            },
+            {
+                name: 'Client Github',
+                link: 'https://github.com/soumik9/pc-crafts'
+            },
+            {
+                name: 'Server Live',
+                link: 'https://pc-craft-server.vercel.app/'
+            },
+        ],
         description: "Welcome to our premier PC Build website, your ultimate destination for creating the perfect custom computer setup tailored to your needs. Whether you're a hardcore gamer, a creative professional, or simply seeking a high- performance workstation, our platform empowers you to design, assemble, and optimize your dream PC.",
         features: [
             "Authentication with Github.",
@@ -59,11 +66,8 @@ export const projectItems: IProject[] = [
             "All product page.",
             "PC Build page [Can choose item based category, Complete PC Build]."
         ],
-        frontendTechnologies: [
-            "React",
-        ],
-        backendTechnologies: [
-            "React",
+        techs: [
+            "NextJS", "TypeScript", "Next Auth", "Redux Toolkkit", "RTK Query", "React hook forms", "Yup", "React hot toast"
         ],
     },
     {
@@ -74,13 +78,16 @@ export const projectItems: IProject[] = [
         images: [
             'a'
         ],
-        links: {
-            clientLink: '',
-            clientGithub: '',
-            serverLink: '',
-            serverGithhub: '',
-            reportLink: '',
-        },
+        links: [
+            {
+                name: 'Live Site',
+                link: ''
+            },
+            {
+                name: 'Client Github',
+                link: ''
+            },
+        ],
         description: '',
         features: [
             "Responsive website.",
@@ -89,28 +96,28 @@ export const projectItems: IProject[] = [
             "JWT token verification.",
             "Stripe payment intregation."
         ],
-        frontendTechnologies: [
-            "React",
-        ],
-        backendTechnologies: [
+        techs: [
             "React",
         ],
     },
     {
-        _id: 'projectItem3',
+        _id: 'projectItem4',
         title: 'Tazkily',
         category: frontendDevelopment,
         thumbnail: '/projects/tazkily/thumbnail.PNG',
         images: [
             'a'
         ],
-        links: {
-            clientLink: 'https://soumik9.github.io/tazkily/',
-            clientGithub: '',
-            serverLink: '',
-            serverGithhub: '',
-            reportLink: '',
-        },
+        links: [
+            {
+                name: 'Live Site',
+                link: ''
+            },
+            {
+                name: 'Client Github',
+                link: ''
+            },
+        ],
         description: '',
         features: [
             "Responsive website.",
@@ -119,10 +126,7 @@ export const projectItems: IProject[] = [
             "JWT token verification.",
             "Stripe payment intregation."
         ],
-        frontendTechnologies: [
-            "React",
-        ],
-        backendTechnologies: [
+        techs: [
             "React",
         ],
     },

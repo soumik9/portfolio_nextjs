@@ -1,6 +1,6 @@
-import classNames from 'classnames';
 import React from 'react';
 import { GrClose } from 'react-icons/gr'
+import { cx } from 'src/hooks/helpers';
 
 export type ModalProps = {
     children: React.ReactNode;
@@ -24,13 +24,13 @@ const Modal = ({ children, open, setOpen, modalCss, title }: ModalProps) => {
             >
             </div>
 
-            <div className={classNames(
-                'rounded-[8px] max-h-[95vh] overflow-y-auto no-scrollbar z-10 relative bg-white',
+            <div className={cx(
+                'rounded-[8px] max-h-[95vh] overflow-y-auto no-scrollbar z-[99999] relative bg-white w-[800px]',
                 modalCss
             )}>
 
 
-                <div className={classNames(
+                <div className={cx(
                     'flex py-[23px] px-[30px]',
                     title ? 'justify-between items-center border-b border-[#D9D9D9]' : 'justify-end'
                 )}>
