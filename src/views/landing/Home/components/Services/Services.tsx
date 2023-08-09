@@ -15,10 +15,10 @@ const Services = (props: Props) => {
                 titleSpan='Services'
             />
 
-            <div className='grid grid-cols-3 gap-5'>
+            <div className='grid lg:grid-cols-3 lg:gap-x-5 gap-y-5 lg:gap-y-0'>
 
                 {serviceItems.map((service) => (
-                    <div className="mb-4 md:mb-0" key={service._id}>
+                    <div key={service._id}>
 
                         <article className="service bg-lightDark border border-smartian trans hover:bg-bgDark cursor-default">
 

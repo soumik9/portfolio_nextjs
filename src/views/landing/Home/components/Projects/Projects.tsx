@@ -12,7 +12,6 @@ import { IProject } from '@config/types/types';
 const swiperOptions = {
     navigation: true,
     modules: [Autoplay, Pagination, Navigation],
-    slidesPerView: 2,
     spaceBetween: 30,
     centeredSlides: true,
     grabCursor: true,
@@ -23,8 +22,10 @@ const swiperOptions = {
     pagination: {
         clickable: true,
     },
-    grid: {
-        rows: 2,
+    breakpoints: {
+        1024: {
+            slidesPerView: 2,
+        }
     },
 };
 

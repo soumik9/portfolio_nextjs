@@ -45,6 +45,7 @@ export interface IProjectLinks {
 export interface IProject {
     _id: string;
     title: string;
+    category: string;
     thumbnail: string;
     images: string[];
     links: IProjectLinks;
