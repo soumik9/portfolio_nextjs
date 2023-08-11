@@ -36,7 +36,7 @@ const ProjectDetailsModal = ({ open, setOpen, data }: Props) => {
         <Modal open={open} setOpen={setOpen} title={<div className='flex items-center gap-2.5'>
             {data?.title}
             <p className={cx(
-                "text-sm  px-2 py-1 rounded",
+                "text-sm px-2 py-1 rounded",
                 data?.category === fullStackWebDevelopment && 'bg-purple text-bgDark',
                 data?.category === backendDevelopment && 'bg-purple-600 text-secondary',
                 data?.category === frontendDevelopment && 'bg-purple-700 text-primary-300',
@@ -46,7 +46,7 @@ const ProjectDetailsModal = ({ open, setOpen, data }: Props) => {
         </div>}>
 
             {/* project slider */}
-            <Swiper {...swiperOptions} className='my-swiper mt-5 mb-8'>
+            {data?.images.length ? <Swiper {...swiperOptions} className='my-swiper mt-5 mb-8'>
                 {data?.images.map((item: IProjectImages, index: number) => (
                     <SwiperSlide key={index} className='text-lightDark relative'>
 
@@ -57,8 +57,11 @@ const ProjectDetailsModal = ({ open, setOpen, data }: Props) => {
 
                     </SwiperSlide>
                 ))}
-            </Swiper>
+            </Swiper> : null}
             {/* end slider */}
+
+            {/* gap */}
+            <div className={cx(!data?.images.length ? 'mt-5' : '')}></div>
 
             {/* links start */}
             <PModalTitle title='Links' />
@@ -87,6 +90,16 @@ const ProjectDetailsModal = ({ open, setOpen, data }: Props) => {
                 arr={data?.features}
                 classes='flex-col space-y-4'
             />
+
+            {/* routes */}
+            {data?.routes?.length ? <PModalList
+                title='API Routes'
+                key='projectRoutes'
+                arr={data?.routes}
+                classes='flex-col space-y-4'
+                isLink
+            /> : null}
+
 
             {/* Technologies */}
             <PModalList

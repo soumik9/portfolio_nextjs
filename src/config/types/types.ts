@@ -55,5 +55,6 @@ export interface IProject {
     links: IProjectLinks[];
     description: string;
     features: string[];
+    routes?: string[];
     techs: string[];
 }

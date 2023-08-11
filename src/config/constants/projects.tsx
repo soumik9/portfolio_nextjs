@@ -98,32 +98,41 @@ export const projectItems: IProject[] = [
         title: 'Tour Management API',
         category: backendDevelopment,
         thumbnail: '/projects/backend.png',
-        images: [
-            {
-                title: '',
-                src: ''
-            }
-        ],
+        images: [],
         links: [
             {
                 name: 'Live Site',
-                link: ''
+                link: 'https://tour-management-g4ws.onrender.com'
             },
             {
-                name: 'Client Github',
-                link: ''
+                name: 'Github',
+                link: 'https://github.com/soumik9/tour-management'
             },
         ],
         description: '',
         features: [
-            "Responsive website.",
-            "Admin, Customer.",
-            "Login, Registration, Google Auth, Reset.",
-            "JWT token verification.",
-            "Stripe payment intregation."
+            "Get all tours.",
+            "Save tour information with validation.",
+            "Update tour information with validation.",
+            "Get all tours with filtering flexiblity.",
+            "Get all tours with sorting flexiblity.",
+            "Get all tours with select any filed flexiblity.",
+            "Get three cheapest tours.",
+            "Get three trending tours by viewers count.",
+        ],
+        routes: [
+            "https://tour-management-g4ws.onrender.com/tours [GET]",
+            "https://tour-management-g4ws.onrender.com/tours?page=5&limit=2 [GET]",
+            "https://tour-management-g4ws.onrender.com/tours?category=gold&name=Bandarban tour [GET]",
+            "https://tour-management-g4ws.onrender.com/tours?sort=name || /tours?sort=price name [GET]",
+            "https://tour-management-g4ws.onrender.com/tours?fields=name -_id [GET]",
+            "https://tour-management-g4ws.onrender.com/tour/cheapest [GET]",
+            "https://tour-management-g4ws.onrender.com/tour/trending [GET]",
+            "https://tour-management-g4ws.onrender.com/tours [POST]",
+            "https://tour-management-g4ws.onrender.com/tours/:id [PATCH]",
         ],
         techs: [
-            "React",
+            "NodeJS", "ExpressJS", "Mongoose"
         ],
     },
     {
