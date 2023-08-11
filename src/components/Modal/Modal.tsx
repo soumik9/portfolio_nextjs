@@ -25,7 +25,7 @@ const Modal = ({ children, open, setOpen, modalCss, title }: ModalProps) => {
             </div>
 
             <div className={cx(
-                'rounded-[8px] max-h-[95vh] overflow-y-auto no-scrollbar z-[99999] relative bg-secondary xll:w-[1200px] lg:w-[800px] w-[375px]',
+                'rounded-[8px] max-h-[95vh] overflow-y-auto no-scrollbar z-[99999] relative bg-secondary xll:w-[1200px] lg:w-[800px] w-[375px] scrollbar',
                 modalCss
             )}>
 
