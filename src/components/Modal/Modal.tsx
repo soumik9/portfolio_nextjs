@@ -25,25 +25,25 @@ const Modal = ({ children, open, setOpen, modalCss, title }: ModalProps) => {
             </div>
 
             <div className={cx(
-                'rounded-[8px] max-h-[95vh] overflow-y-auto no-scrollbar z-[99999] relative bg-white w-[800px]',
+                'rounded-[8px] max-h-[95vh] overflow-y-auto no-scrollbar z-[99999] relative bg-secondary xll:w-[1200px] lg:w-[800px] w-[375px]',
                 modalCss
             )}>
 
 
                 <div className={cx(
-                    'flex py-[23px] px-[30px]',
-                    title ? 'justify-between items-center border-b border-[#D9D9D9]' : 'justify-end'
+                    'flex lg:py-[23px] py-[12px] lg:px-[30px] px-[10px]',
+                    title ? 'justify-between items-center border-b border-lightDark border-dashed' : 'justify-end'
                 )}>
-                    {title ? <p className="text-[20px] font-semibold leading-[24px] cursor-default">
+                    {title ? <p className="text-[20px] text-lightDark font-semibold leading-[24px] cursor-default">
                         {title}
                     </p> : null}
 
                     <button type='button' onClick={() => setOpen(false)}>
-                        <GrClose />
+                        <GrClose className='!text-lightDark hover:text-primary trans' />
                     </button>
                 </div>
 
-                <div className={`relative px-[30px]`}>
+                <div className={`relative lg:px-[30px] px-[10px]text-lightDark`}>
                     {children}
                 </div>
 

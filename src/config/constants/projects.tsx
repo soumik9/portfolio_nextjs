@@ -41,7 +41,30 @@ export const projectItems: IProject[] = [
         category: fullStackWebDevelopment,
         thumbnail: '/projects/pc-builder/thumbnail.PNG',
         images: [
-            'a'
+            {
+                title: '',
+                src: '/projects/pc-builder/s1.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/pc-builder/s2.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/pc-builder/s3.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/pc-builder/s4.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/pc-builder/s5.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/pc-builder/s6.PNG'
+            },
         ],
         links: [
             {
@@ -76,7 +99,10 @@ export const projectItems: IProject[] = [
         category: backendDevelopment,
         thumbnail: '/projects/backend.png',
         images: [
-            'a'
+            {
+                title: '',
+                src: ''
+            }
         ],
         links: [
             {
@@ -106,7 +132,10 @@ export const projectItems: IProject[] = [
         category: frontendDevelopment,
         thumbnail: '/projects/tazkily/thumbnail.PNG',
         images: [
-            'a'
+            {
+                title: '',
+                src: ''
+            }
         ],
         links: [
             {

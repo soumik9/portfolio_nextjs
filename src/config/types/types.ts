@@ -42,12 +42,16 @@ export interface IService {
 export interface IProjectLinks {
     [key: string]: string;
 }
+
+export interface IProjectImages {
+    [key: string]: string;
+}
 export interface IProject {
     _id: string;
     title: string;
     category: string;
     thumbnail: string;
-    images: string[];
+    images: IProjectImages[];
     links: IProjectLinks[];
     description: string;
     features: string[];
