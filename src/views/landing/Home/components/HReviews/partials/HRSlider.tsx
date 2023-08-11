@@ -1,16 +1,14 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Autoplay } from "swiper";
-import 'swiper/css';
+import SwiperCore from "swiper";
+import { Autoplay } from 'swiper/modules';
+
 import { reviewSlidersData } from '@config/constants';
 import Image from 'next/image';
-// import "swiper/css/pagination";
-// import { Pagination } from "swiper";
+
 const parse = require('html-react-parser');
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-import Slider from "react-slick";
 
 SwiperCore.use([Autoplay]);
 
@@ -28,11 +26,8 @@ const settings = {
 const HRSlider = () => {
     return (
         <div className=''>
-            <Swiper
+            {/* <Swiper
                 spaceBetween={40}
-                // slidesPerView='auto'
-                // slidesPerView={2}
-                // slidesPerView={2}
                 slidesPerGroup={1}
                 loop={true}
                 autoplay={{
@@ -50,7 +45,6 @@ const HRSlider = () => {
                     },
                 }}
             >
-                {/* <Slider {...settings}> */}
                 {reviewSlidersData.map((slideContent, index) => (<SwiperSlide key={slideContent._id} virtualIndex={index}>
                     <div className='bg-lightDark p-[40px] rounded-sm'>
                         <p className='leading-[160%] text-purple '>{slideContent.review}</p>
@@ -67,8 +61,7 @@ const HRSlider = () => {
                     </div>
                 </SwiperSlide>
                 ))}
-                {/* </Slider> */}
-            </Swiper>
+            </Swiper> */}
         </div >
     )
 }

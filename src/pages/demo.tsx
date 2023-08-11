@@ -7,8 +7,8 @@ type Props = {}
 const demo = (props: Props) => {
     return (
         <>
-            <Button />
-            <Button outlined={true} />
+            {/* <Button />
+            <Button outlined={true} /> */}
         </>
     )
 }
