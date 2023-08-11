@@ -6,7 +6,7 @@ export type ModalProps = {
     children: React.ReactNode;
     open: boolean;
     setOpen: (open: boolean) => void;
-    title?: string;
+    title?: string | React.ReactNode;
     modalCss?: string;
 };
 

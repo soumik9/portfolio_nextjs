@@ -5,7 +5,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay, Pagination } from 'swiper/modules';
 import Image from 'next/image';
 import { BsArrowRight } from 'react-icons/bs';
-import { TbCheckbox } from 'react-icons/tb';
+import { backendDevelopment, frontendDevelopment, fullStackWebDevelopment } from '@config/constants/projects';
+import { cx } from 'src/hooks/helpers';
+import PModalList from '../partials/PModalList';
+import PModalTitle from '../partials/PModalTitle';
 
 type Props = {
     open: boolean;
@@ -25,20 +28,25 @@ const swiperOptions = {
     pagination: {
         clickable: true,
     },
-    // breakpoints: {
-    //     1024: {
-    //         slidesPerView: 2,
-    //     }
-    // },
 };
 
 const ProjectDetailsModal = ({ open, setOpen, data }: Props) => {
     return (
 
-        <Modal open={open} setOpen={setOpen} title={data?.title}>
+        <Modal open={open} setOpen={setOpen} title={<div className='flex items-center gap-2.5'>
+            {data?.title}
+            <p className={cx(
+                "text-sm  px-2 py-1 rounded",
+                data?.category === fullStackWebDevelopment && 'bg-purple text-bgDark',
+                data?.category === backendDevelopment && 'bg-purple-600 text-secondary',
+                data?.category === frontendDevelopment && 'bg-purple-700 text-primary-300',
+            )}>
+                {data?.category}
+            </p>
+        </div>}>
 
             {/* project slider */}
-            <Swiper {...swiperOptions} className='my-swiper mt-5'>
+            <Swiper {...swiperOptions} className='my-swiper mt-5 mb-8'>
                 {data?.images.map((item: IProjectImages, index: number) => (
                     <SwiperSlide key={index} className='text-lightDark relative'>
 
@@ -53,7 +61,8 @@ const ProjectDetailsModal = ({ open, setOpen, data }: Props) => {
             {/* end slider */}
 
             {/* links start */}
-            <ul className='flex flex-wrap justify-between gap-x-1 gap-y-3 mt-8 mb-5'>
+            <PModalTitle title='Links' />
+            <ul className='flex flex-wrap justify-between gap-x-1 gap-y-3 mb-6'>
                 {data?.links.map((item: IProjectLinks, index: number) => <li
                     key={`projectLinks${index}`}
                     className='flex items-center gap-1 md:gap-2 border border-dashed border-purple-700 hover:border-purple trans group py-1.5 px-2.5 rounded text-[14px] md:text-base'
@@ -68,20 +77,24 @@ const ProjectDetailsModal = ({ open, setOpen, data }: Props) => {
             {/* links end */}
 
             {/* descriptions */}
-            <p className='text-lightDark mb-5 lg:text-[18px] text-base leading-8 font-medium'>{data?.description}</p>
+            <PModalTitle title='Descriptions' />
+            <p className='text-lightDark mb-6 lg:text-[18px] text-base leading-8 font-medium'>{data?.description}</p>
 
             {/* features */}
-            <h6 className='text-[22px] text-purple-700 border-b border-purple-700 mb-3'>Features</h6>
-            <ul className='flex flex-col space-y-4 mb-8'>
-                {data?.features.map((item: string, index: number) => <li
-                    key={`projectLinks${index}`}
-                    className='flex items-center gap-1 md:gap-2 border border-dashed border-purple-700 hover:border-purple trans group py-1.5 px-2.5 rounded text-[14px] md:text-base'
-                >
-                    <TbCheckbox className='relative top-[2px] text-purple text-[20px]' />
-                    <span className='text-lightDark'>{item}</span>
+            <PModalList
+                title='Features'
+                key='projectLinks'
+                arr={data?.features}
+                classes='flex-col space-y-4'
+            />
 
-                </li>)}
-            </ul>
+            {/* Technologies */}
+            <PModalList
+                title='Technologies'
+                key='projectTechs'
+                arr={data?.techs}
+                classes='flex-wrap gap-x-3 gap-y-4 justify-center'
+            />
 
         </Modal>
     )
