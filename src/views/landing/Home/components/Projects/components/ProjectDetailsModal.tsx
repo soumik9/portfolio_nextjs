@@ -81,7 +81,7 @@ const ProjectDetailsModal = ({ open, setOpen, data }: Props) => {
 
             {/* descriptions */}
             <PModalTitle title='Descriptions' />
-            <p className='text-lightDark mb-6 lg:text-[18px] text-base leading-8 font-medium'>{data?.description}</p>
+            <p className='text-lightDark mb-6 lg:text-[18px] text-base leading-8 font-medium text-justify'>{data?.description}</p>
 
             {/* features */}
             <PModalList

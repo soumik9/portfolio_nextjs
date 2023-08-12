@@ -46,6 +46,11 @@ export interface IProjectLinks {
 export interface IProjectImages {
     [key: string]: string;
 }
+
+export interface IProjectRoutes {
+    text: string;
+    link: string;
+}
 export interface IProject {
     _id: string;
     title: string;
@@ -55,6 +60,6 @@ export interface IProject {
     links: IProjectLinks[];
     description: string;
     features: string[];
-    routes?: string[];
+    routes?: IProjectRoutes[];
     techs: string[];
 }
