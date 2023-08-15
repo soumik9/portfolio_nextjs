@@ -6,9 +6,7 @@ import Skills from './components/Skills/Skills'
 import Services from './components/Services/Services'
 import Projects from './components/Projects/Projects'
 
-type Props = {}
-
-const Home = (props: Props) => {
+const Home: React.FC = () => {
     return (
         <main className='bg-bgDark'>
             <HomeHero />

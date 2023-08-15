@@ -1,24 +1,11 @@
 import SectionLayout from '@components/ViewsComp/SectionLayout/SectionLayout'
 import { summaryItems } from '@config/constants'
 import { summaryItemType } from '@config/types/types'
-// import { gsap, Power3 } from 'gsap'
 import Image from 'next/image'
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import SumItem from './partials/SumItem'
 
-
-type Props = {}
-
-const HomeHero = (props: Props) => {
-
-    let mainCon = useRef(null);
-
-    useEffect(() => {
-        // gsap.to('.main', { opacity: 1, y: 220, x: 0, duration: 2, ease: 'Power3.inOut' })
-        // gsap.from(mainCon, { opacity: 0, x: 100, y: 0, duration: 1 });
-        // gsap.to(mainCon, { opacity: 1, x: 0, y: 0, duration: 1 });
-    }, [])
-
+const HomeHero: React.FC = () => {
     return (
         <SectionLayout>
 
@@ -36,12 +23,13 @@ const HomeHero = (props: Props) => {
 
             <div className="bg-lightDark lg:p-[60px_50px] md:p-[40px] p-[40px_15px] rounded-sm relative w-full">
 
-                <h5 className='heading-h5 text-secondary uppercase '>👋 Develop high-quality websites</h5>
+                <h5 className='text-xs text-secondary uppercase xll:text-[18px] xll:leading-[160%] leading-[150%] xll:font-semibold font-medium tracking-[1px]'>👋 Develop high-quality websites</h5>
 
-                <h1 className='mt-[12px] heading-h1 text-secondary font-secondary'>
-                    Talented Developer <br />
-                    <span className='text-primary'>That Help you</span>
+                <h1 className='mt-[12px] text-[24px] xll:text-[56px] md:text-[32px] font-semibold xll:leading-[120%] md:leading-[125%] text-secondary font-secondary w-full'>
+                    <span className='text-primary'>F</span>ull Stack Web Developer
                 </h1>
+
+                <p className='md:w-8/12 lg:w-9/12 text-primary mt-2 text-base text-justify'>Are you looking for the perfect ReactJS developer, front-end developer, or MERN Stack developer? Then, you are in the right place. Get the professional result</p>
 
                 <hr className='my-8 bg-bgDark border-none h-[2px]' />
 
