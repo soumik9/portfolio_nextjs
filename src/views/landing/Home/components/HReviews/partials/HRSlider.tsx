@@ -22,7 +22,7 @@ const swiperOptions = {
         0: {
             slidesPerView: 1,
         },
-        1024: {
+        1440: {
             slidesPerView: 2,
             spaceBetween: 40,
         },
@@ -31,26 +31,24 @@ const swiperOptions = {
 
 const HRSlider = () => {
     return (
-        <div className=''>
-            <Swiper {...swiperOptions} >
-                {reviewSlidersData.map((slideContent, index) => (<SwiperSlide key={slideContent._id} virtualIndex={index}>
-                    <div className='bg-lightDark p-[40px] rounded-sm'>
-                        <p className='leading-[160%] text-purple '>{slideContent.review}</p>
+        <Swiper {...swiperOptions} >
+            {reviewSlidersData.map((slideContent, index) => (<SwiperSlide key={slideContent._id} virtualIndex={index}>
+                <div className='bg-lightDark lg:p-[40px] p-[20px] rounded-sm'>
+                    <p className='leading-[160%] text-purple '>{slideContent.review}</p>
 
-                        <div className='mt-8 flex items-center gap-8'>
+                    <div className='mt-8 flex items-center gap-8'>
 
-                            <Image src={slideContent.img} width={60} height={60} alt={slideContent.name} className='rounded-full p-[1px] border border-primary object-cover' />
+                        <Image src={slideContent.img} width={60} height={60} alt={slideContent.name} className='rounded-full p-[1px] border border-primary object-cover' />
 
-                            <div>
-                                <h6 className='text-primary'>{slideContent.name}</h6>
-                                <p className='text-secondary'>{parse(slideContent.position)}</p>
-                            </div>
+                        <div>
+                            <h6 className='text-primary'>{slideContent.name}</h6>
+                            <p className='text-secondary'>{parse(slideContent.position)}</p>
                         </div>
                     </div>
-                </SwiperSlide>
-                ))}
-            </Swiper>
-        </div >
+                </div>
+            </SwiperSlide>
+            ))}
+        </Swiper>
     )
 }
 

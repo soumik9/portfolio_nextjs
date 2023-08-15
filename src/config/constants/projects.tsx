@@ -95,7 +95,7 @@ export const projectItems: IProject[] = [
     },
     {
         _id: 'projectItem31bx',
-        title: 'Cow HUt',
+        title: 'Cow Hut',
         category: backendDevelopment,
         thumbnail: '/projects/backend.png',
         images: [],
@@ -109,7 +109,7 @@ export const projectItems: IProject[] = [
                 link: 'https://github.com/soumik9/cow-hut'
             },
         ],
-        description: '',
+        description: "Join the digital transformation of dairy farming with Cow Hut. Accessible from any device with an internet connection, you can manage your farm on the go. Collaborate seamlessly with your team, ensuring everyone is on the same page and contributing to your farm's success.",
         features: [
             "Authentication with refresh token.",
             "Sigup as a admin and Seller & Buyer.",
@@ -228,7 +228,7 @@ export const projectItems: IProject[] = [
             },
         ],
         techs: [
-            "NodeJS", "ExpressJS", "Mongoose", "Multer"
+            "NodeJS", "ExpressJS", "TypeScript", "Mongoose", "Multer", "Zod", "Http Status", "JWT"
         ],
     },
     {

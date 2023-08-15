@@ -5,12 +5,12 @@ import { BiLogoTailwindCss, BiLogoReact, BiLogoRedux, BiLogoNodejs, BiLogoMongod
 import { RiJavascriptLine } from 'react-icons/ri';
 import { FiGithub, FiTrello } from 'react-icons/fi';
 import { TbBrandNextjs, TbBrandTypescript } from 'react-icons/tb';
-import { SiExpress, SiMongoose, SiMysql, SiPostgresql } from 'react-icons/si';
+import { SiExpress, SiMongoose, SiMysql, SiPostgresql, SiPrisma } from 'react-icons/si';
 import { FaLaravel } from 'react-icons/fa';
 import { LiaFilePowerpointSolid } from 'react-icons/lia';
 import { cx } from 'src/hooks/helpers';
 
-const commonCls = 'text-primary text-[22px] md:text-[26px]'
+const commonCls = 'text-primary text-[18px] md:text-[22px] lg:text-[26px]'
 
 export const skillItems: skillItemType[] = [
     {
@@ -104,10 +104,16 @@ export const skillItems: skillItemType[] = [
         isExpert: true
     },
     {
+        _id: 'skill_14aq1',
+        title: 'Prisma',
+        icon: <SiPrisma className={cx(commonCls)} />,
+        isExpert: false
+    },
+    {
         _id: 'skill_15',
         title: 'Laravel',
         icon: <FaLaravel className={cx(commonCls)} />,
-        isExpert: true
+        isExpert: false
     },
     {
         _id: 'skill_16',

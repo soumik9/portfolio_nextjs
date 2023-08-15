@@ -6,7 +6,7 @@ type Props = {
 
 const LightDarkCardLayout = ({ children }: Props) => {
     return (
-        <div className="bg-lightDark lg:p-[60px_50px] md:p-[40px] p-[40px_15px] rounded-sm relative w-full">
+        <div className="bg-lightDark md:p-[40px] p-[40px_15px] rounded-sm relative w-full">
             {children}
         </div>
     )

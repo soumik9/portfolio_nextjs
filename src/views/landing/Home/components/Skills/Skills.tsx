@@ -22,13 +22,13 @@ const Skills = (props: Props) => {
 
                     <SkillMainCard
                         title='Frontend & Backend'
-                        items={skillItems.slice(0, 16)}
+                        items={skillItems.slice(0, 17)}
                     />
 
                     <SkillMainCard
                         title='Others'
-                        items={skillItems.slice(16)}
-                        classes='mt-14'
+                        items={skillItems.slice(17)}
+                        classes='lg:mt-14 mt-9'
                     />
 
                 </LightDarkCardLayout>

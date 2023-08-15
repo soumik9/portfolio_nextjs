@@ -28,12 +28,12 @@ const ProjectCard = ({ open, data, setOpen, setDetailsData }: Props) => {
 
                     <div className='border-b border-dashed mt-2'></div>
 
-                    <div className="mt-3.5 flex justify-between items-center">
+                    <div className="mt-3.5 flex flex-col md:flex-row gap-y-1 md:gap-y-0 justify-between items-center">
                         <h2 className="font-medium text-base md:text-lg text-secondary">
                             {data.title}
                         </h2>
                         <p className={cx(
-                            "text-sm  px-2 py-1 rounded",
+                            "text-sm px-2 py-1 rounded",
                             data.category === fullStackWebDevelopment && 'bg-purple text-bgDark',
                             data.category === backendDevelopment && 'bg-purple-600 text-secondary',
                             data.category === frontendDevelopment && 'bg-purple-700 text-primary-300',
@@ -42,7 +42,7 @@ const ProjectCard = ({ open, data, setOpen, setDetailsData }: Props) => {
                         </p>
                     </div>
 
-                    <ul className="mt-8">
+                    <ul className="mt-6 md:mt-8">
                         {data.features.slice(0, 3).map((item: string, index: number) =>
                             <li className='flex gap-1.5 my-3.5 w-full' key={`projectFeature${index}`}>
                                 <BsCheck className='text-primary text-[24px]' />
@@ -52,17 +52,7 @@ const ProjectCard = ({ open, data, setOpen, setDetailsData }: Props) => {
                     </ul>
 
 
-
-                    {/* <ul className='flex flex-wrap gap-x-1 gap-y-2'>
-                    {data.techs.map((item: string, index: number) => <li
-                        key={`projectTech${index}`}
-                        className='flex gap-1 md:gap-2 border border-dashed border-primary py-1.5 px-2.5 rounded text-[14px] md:text-base hover:bg-bgDark trans font-semibold text-secondary'
-                    >
-                        {item}
-                    </li>)}
-                </ul> */}
-
-                    <div className='mt-7 flex justify-between items-center'>
+                    <div className='mt-5 md:mt-7 flex justify-between items-center'>
                         <a href={data.links[0].link} target='_blank' rel="noreferrer" className='bg-white text-purple-700 hover:text-purple-600 border border-primary focus:text-white p-[10px] text-sm focus:bg-smartian rounded-sm font-medium button-arounder'>{data.links[0].name}</a>
 
                         <Button

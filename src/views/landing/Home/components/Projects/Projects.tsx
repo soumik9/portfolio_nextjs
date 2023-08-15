@@ -16,10 +16,10 @@ const swiperOptions = {
     spaceBetween: 30,
     // centeredSlides: true,
     grabCursor: true,
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     pagination: {
         clickable: true,
     },
@@ -30,9 +30,7 @@ const swiperOptions = {
     },
 };
 
-type Props = {}
-
-const Projects = (props: Props) => {
+const Projects: React.FC = () => {
 
     // states
     const [open, setOpen] = useState<boolean>(false);
