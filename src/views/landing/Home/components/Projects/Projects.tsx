@@ -58,7 +58,6 @@ const Projects: React.FC = () => {
 
             <ProjectDetailsModal open={open} setOpen={setOpen} data={detailsData} />
 
-
         </SectionLayout>
     )
 }

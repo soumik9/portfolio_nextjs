@@ -4,11 +4,12 @@ import { cx } from 'src/hooks/helpers';
 type Props = {
     children: React.ReactNode;
     css?: string;
+    id?: string;
 }
 
-const SectionLayout = ({ children, css }: Props) => {
+const SectionLayout = ({ children, css, id }: Props) => {
     return (
-        <section className={cx(
+        <section id={id} className={cx(
             css,
             'lg:py-[80px] md:py-[60px] py-[40px]'
         )}>

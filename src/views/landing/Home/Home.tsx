@@ -5,6 +5,7 @@ import Intro from './components/Intro/Intro'
 import Skills from './components/Skills/Skills'
 import Services from './components/Services/Services'
 import Projects from './components/Projects/Projects'
+import Contact from './components/Contact/Contact'
 
 const Home: React.FC = () => {
     return (
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
             <Services />
             <Projects />
             <HReviews />
+            <Contact />
         </main>
     )
 }
