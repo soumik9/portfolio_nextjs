@@ -1,5 +1,6 @@
 import Button from '@components/Button/Button'
 import SectionLayout from '@components/ViewsComp/SectionLayout/SectionLayout'
+import { Link } from 'react-scroll';
 import React from 'react'
 import { AiOutlineDownload } from 'react-icons/ai'
 
@@ -22,9 +23,10 @@ const Intro = (props: Props) => {
                 </div>
 
                 <div className='flex md:justify-center lg:justify-end xll:justify-start gap-5'>
-                    <Button
+                    <Link to='contactMe' smooth={true} duration={1700}>  <Button
                         text='Hire Me'
-                    />
+                    /></Link>
+
                     <Button
                         text='Download CV'
                         outlined
