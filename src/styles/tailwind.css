@@ -33,3 +33,8 @@
 .p-text{
     @apply lg:text-[16px] text-[14px] lg:leading-[120%] leading-[125%]
 }
+
+.input,
+.textarea {
+    @apply w-full py-2.5 px-4 rounded-[0.5rem] bg-transparent border-2 border-smartian resize-none text-secondary;
+}
