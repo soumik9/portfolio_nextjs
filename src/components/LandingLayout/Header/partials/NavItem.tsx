@@ -2,7 +2,7 @@
 import { navItemType } from "@config/types/types";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { cx } from "src/hooks/helpers";
 
 type Props = {

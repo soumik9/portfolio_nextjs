@@ -33,10 +33,10 @@ const swiperOptions = {
 const ProjectDetailsModal = ({ open, setOpen, data }: Props) => {
     return (
 
-        <Modal open={open} setOpen={setOpen} title={<div className='flex items-center gap-2.5'>
-            {data?.title}
+        <Modal open={open} setOpen={setOpen} title={<div className='flex flex-col md:flex-row md:items-center gap-2.5'>
+            <h2>{data?.title}</h2>
             <p className={cx(
-                "text-sm px-2 py-1 rounded",
+                "text-sm px-2 py-1 rounded w-max",
                 data?.category === fullStackWebDevelopment && 'bg-purple text-bgDark',
                 data?.category === backendDevelopment && 'bg-purple-600 text-secondary',
                 data?.category === frontendDevelopment && 'bg-purple-700 text-primary-300',
@@ -51,7 +51,7 @@ const ProjectDetailsModal = ({ open, setOpen, data }: Props) => {
                     <SwiperSlide key={index} className='text-lightDark relative'>
 
                         <Image src={item.src} alt={item.title} width={1280} height={720} className='rounded object-cover' />
-                        <p className='text-[32px]  text-lightDark'>
+                        <p className='text-[32px] text-lightDark'>
                             {item.title}
                         </p>
 
@@ -68,12 +68,10 @@ const ProjectDetailsModal = ({ open, setOpen, data }: Props) => {
             <ul className='flex flex-wrap justify-between gap-x-1 gap-y-3 mb-6'>
                 {data?.links.map((item: IProjectLinks, index: number) => <li
                     key={`projectLinks${index}`}
-                    className='flex items-center gap-1 md:gap-2 border border-dashed border-purple-700 hover:border-purple trans group py-1.5 px-2.5 rounded text-[14px] md:text-base'
+                    className='flex items-center gap-1 md:gap-2 border border-dashed border-purple-700 group hover:border-purple trans group   rounded text-[14px] md:text-base'
                 >
-                    <span className='text-lightDark'>{item.name}</span>
-                    <BsArrowRight className='relative top-[2px]' />
-                    <a href={item.link} target='_blank' rel="noreferrer" className='text-purple-700 font-semibold group-hover:underline group-hover:text-purple trans'>
-                        {item.link}
+                    <a href={item.link} target='_blank' rel="noreferrer" className='text-lightDark font-semibold group-hover:underline px-2.5 py-1.5 group-hover:text-purple-600 trans'>
+                        {item.name}
                     </a>
                 </li>)}
             </ul>
@@ -107,6 +105,8 @@ const ProjectDetailsModal = ({ open, setOpen, data }: Props) => {
                 key='projectTechs'
                 arr={data?.techs}
                 classes='flex-wrap gap-x-3 gap-y-4 justify-center'
+                iconClass='hidden md:block'
+                textClass='!w-full'
             />
 
         </Modal>

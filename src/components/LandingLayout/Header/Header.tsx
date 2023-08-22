@@ -38,15 +38,10 @@ const Header = (props: Props) => {
                     <div className="flex justify-between items-center">
 
                         <div className='flex gap-[40px] items-center'>
-                            {/* <HeaderLogo /> */}
-                            <Link href={homeUrl} legacyBehavior>
-                                <a
-                                    href='#'
-                                    aria-label='Soumik Ahammed'
-                                    className='h-[40px] w-[40px] bg-primary flex items-center justify-center rounded-[8px]'
-                                >
-                                    <span className='text-[32px] text-lightDark'>S</span>
-                                </a>
+
+                            <Link href={homeUrl} aria-label='Soumik Ahammed'
+                                className='h-[40px] w-[40px] bg-primary flex items-center justify-center rounded-[8px]'>
+                                <span className='text-[32px] text-lightDark'>S</span>
                             </Link>
 
 

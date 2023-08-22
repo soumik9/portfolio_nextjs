@@ -21,7 +21,7 @@ export const encodedAdress: string = 'aHR0cHM6Ly9nb28uZ2wvbWFwcy9vZ0VEV3NYUllTNH
 
 export const homeUrl: string = "/";
 export const aboutUrl: string = "/about";
-export const caseStudyUrl: string = "/case-study";
+export const projectsUrl: string = "/projects";
 export const contactUrl: string = "/contact-us";
 
 export const navItems: navItemType[] = [
@@ -37,8 +37,8 @@ export const navItems: navItemType[] = [
     },
     {
         _id: 'navItem_3',
-        title: 'Case Study',
-        url: caseStudyUrl
+        title: 'Projects',
+        url: projectsUrl
     },
     {
         _id: 'navItem_4',
@@ -133,8 +133,8 @@ export const footerUserfulItems: navItemType[] = [
     },
     {
         _id: 'footUseful_2',
-        title: 'Case Study',
-        url: caseStudyUrl,
+        title: 'Projects',
+        url: projectsUrl,
     },
     {
         _id: 'footUseful_3',

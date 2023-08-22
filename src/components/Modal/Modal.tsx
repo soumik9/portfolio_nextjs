@@ -25,7 +25,7 @@ const Modal = ({ children, open, setOpen, modalCss, title }: ModalProps) => {
             </div>
 
             <div className={cx(
-                'rounded-[8px] max-h-[95vh] overflow-y-auto no-scrollbar z-[99999] relative bg-secondary xll:w-[1200px] lg:w-[800px] w-[375px] scrollbar',
+                'rounded-[8px] max-h-[95vh] overflow-y-auto no-scrollbar z-[99999] relative bg-secondary xll:w-[1200px] lg:w-[800px] md:w-[700px] w-[375px] scrollbar',
                 modalCss
             )}>
 
@@ -43,7 +43,7 @@ const Modal = ({ children, open, setOpen, modalCss, title }: ModalProps) => {
                     </button>
                 </div>
 
-                <div className={`relative lg:px-[30px] px-[10px]text-lightDark`}>
+                <div className={`relative lg:px-[30px] px-[10px] text-lightDark`}>
                     {children}
                 </div>
 
