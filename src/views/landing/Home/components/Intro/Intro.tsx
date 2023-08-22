@@ -4,9 +4,7 @@ import { Link } from 'react-scroll';
 import React from 'react'
 import { AiOutlineDownload } from 'react-icons/ai'
 
-type Props = {}
-
-const Intro = (props: Props) => {
+const Intro: React.FC = () => {
     return (
         <SectionLayout css='lg:pt-[40px]'>
             <div className='grid lg:grid-cols-2 xll:grid-cols-3 justify-center items-center'>
@@ -23,9 +21,12 @@ const Intro = (props: Props) => {
                 </div>
 
                 <div className='flex md:justify-center lg:justify-end xll:justify-start gap-5'>
-                    <Link to='contactMe' smooth={true} duration={1700}>  <Button
-                        text='Hire Me'
-                    /></Link>
+
+                    <Link to='contactMe' smooth={true} duration={1700}>
+                        <Button
+                            text='Hire Me'
+                        />
+                    </Link>
 
                     <Button
                         text='Download CV'

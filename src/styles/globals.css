@@ -100,3 +100,20 @@ h6 {
   border-radius: 0 0 2rem 2rem;
   box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
 }
+
+/* swiper css */
+.swiper-button-prev:after {
+  /* position: absolute;
+  right: 10px;
+  z-index: 1 !important; */
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: #3c6382;
+  font-size: 16px !important;
+  font-weight: 700;
+  background: #E7BD8D;
+  padding: 10px 12px;
+  border-radius: 50%;
+}

@@ -5,36 +5,57 @@ export const backendDevelopment: string = 'Backend Development';
 export const frontendDevelopment: string = 'Frontend Development';
 
 export const projectItems: IProject[] = [
-    // {
-    //     _id: 'projectItem1',
-    //     title: '',
-    //     category: 'Full Stack Web Development',
-    //     thumbnail: '',
-    //     images: [
-    //         'a'
-    //     ],
-    //     links: {
-    //         clientLink: '',
-    //         clientGithub: '',
-    //         serverLink: '',
-    //         serverGithhub: '',
-    //         reportLink: '',
-    //     },
-    //     description: '',
-    //     features: [
-    //         "Responsive website.",
-    //         "Admin, Customer.",
-    //         "Login, Registration, Google Auth, Reset.",
-    //         "JWT token verification.",
-    //         "Stripe payment intregation."
-    //     ],
-    //     frontendTechnologies: [
-    //         "React",
-    //     ],
-    //     backendTechnologies: [
-    //         "React",
-    //     ],
-    // },
+    {
+        _id: 'projectItem1',
+        title: 'Inventory Management',
+        category: 'Full Stack Web Development',
+        thumbnail: '/projects/inventory/thumbnail.PNG',
+        images: [
+            {
+                title: '',
+                src: '/projects/inventory/thumbnail.PNG'
+            },
+        ],
+        links: [
+            {
+                name: 'Live Site',
+                link: 'https://inventory-management-demo-v1.vercel.app'
+            },
+            {
+                name: 'Case Study',
+                link: 'https://docs.google.com/document/d/1DB_dRoiNHu7xeFfBG_piC6-LhFlM5TZundQ0aMPRbNg/edit'
+            },
+        ],
+        description: '',
+        features: [
+            "Authentication & Permission based panel.",
+            "Admin, Customers, Suppliers Management with searhing & filtering.",
+            "Roles with permission assign.",
+            "Create user with assigning accout Id to show statements.",
+            "Can manage product categories.",
+            "Can manage products with available stocks.",
+            "Can search product & categories.",
+            "Can re-stock a product.",
+            "Add To Cart functionlity with set a selling price.",
+            "Can view add to cart list with total.",
+            "Can checkout the cart with set labor charge, discount.",
+            "Can set customer then set paid & due amount on checkout",
+            "Can print the invoice & by whom the invoice is printed.",
+            "User will have account can check balance.",
+            "After confirm order can manage orders.",
+            "Can add cash or paid full due by order.",
+            "Can change the status of the order processing to delivered.",
+            "Can re-print the order from orders.",
+            "Can searh orders order invoice id, cusomer name or email.",
+            "A customer can return any product.",
+            "After returing the product the product will re-stock.",
+            "Can make orders for suppliers.",
+            "Can print the orders for suppliers.",
+        ],
+        techs: [
+            "ReactJS", "React Bootstrap", "React Query", "Axios", "Jotai", "Sweetalert", "NodeJs", "Express", "JWT", "Multer", "MongoDB", "Mongoose"
+        ],
+    },
     {
         _id: 'projectItem2',
         title: 'PC Builder',

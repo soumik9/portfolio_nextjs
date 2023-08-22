@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // import required modules
-import { Navigation, Autoplay, Pagination } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import ProjectCard from './components/ProjectCard';
 import { projectItems } from '@config/constants/projects';
 import { IProject } from '@config/types/types';
@@ -12,14 +12,14 @@ import ProjectDetailsModal from './components/ProjectDetailsModal';
 
 const swiperOptions = {
     navigation: true,
-    modules: [Autoplay, Pagination, Navigation],
+    modules: [Autoplay, Navigation],
     spaceBetween: 30,
-    // centeredSlides: true,
+    centeredSlides: true,
     grabCursor: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 3500,
+    //     disableOnInteraction: false,
+    // },
     pagination: {
         clickable: true,
     },

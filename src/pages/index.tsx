@@ -7,7 +7,7 @@ export default function HomePage() {
     <>
       <Head>
         <title>Soumik Ahammed | Full Stack Web Developer</title>
-        <meta name="description" content="A full-stack web developer who can develop amazing websites or web applications. React.js, Next.js, MERN, Express, MongoDB, Landing website, E-commerce website, POS application & many more." />
+        <meta name="description" content="Crafting Exceptional Digital Experiences | Full Stack Web Developer | Expertise in React.js, Next.js, MERN Stack | Transforming Ideas into Engaging Websites, E-commerce Solutions, and Innovative Applications for Your Success." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

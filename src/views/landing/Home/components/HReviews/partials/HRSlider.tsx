@@ -1,22 +1,20 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay, Pagination } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import { reviewSlidersData } from '@config/constants';
 import Image from 'next/image';
+import { useRef } from 'react';
 const parse = require('html-react-parser');
 
 const swiperOptions = {
     navigation: true,
-    modules: [Autoplay, Pagination, Navigation],
+    modules: [Autoplay, Navigation],
     spaceBetween: 40,
     // loop: true,
     grabCursor: true,
     autoplay: {
-        delay: 2500,
+        delay: 3500,
         disableOnInteraction: false,
-    },
-    pagination: {
-        clickable: true,
     },
     breakpoints: {
         0: {
@@ -29,12 +27,34 @@ const swiperOptions = {
     },
 };
 
+interface SwiperInstance {
+    autoplay: {
+        start: () => void;
+        stop: () => void;
+    };
+}
+
 const HRSlider = () => {
+
+    const swiperRef = useRef<SwiperInstance | null>(null);
+
+    const handleMouseEnter = () => {
+        if (swiperRef.current) {
+            swiperRef.current.autoplay.stop();
+        }
+    };
+
+    const handleMouseLeave = () => {
+        if (swiperRef.current) {
+            swiperRef.current.autoplay.start();
+        }
+    };
+
     return (
-        <Swiper {...swiperOptions} >
+        <Swiper {...swiperOptions} onSwiper={swiper => (swiperRef.current = swiper)}>
             {reviewSlidersData.map((slideContent, index) => (<SwiperSlide key={slideContent._id} virtualIndex={index}>
                 <div className='bg-lightDark lg:p-[40px] p-[20px] rounded-sm'>
-                    <p className='leading-[160%] text-purple '>{slideContent.review}</p>
+                    <p className='leading-[160%] text-purple text-justify'>{slideContent.review}</p>
 
                     <div className='mt-8 flex items-center gap-8'>
 

@@ -8,6 +8,7 @@ import { Toaster } from 'react-hot-toast';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export default function App({ Component, pageProps }: AppProps) {
   return <LandingLayout>
