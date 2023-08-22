@@ -25,9 +25,7 @@ const HomeHero: React.FC = () => {
 
                 <h5 className='text-xs text-secondary uppercase xll:text-[18px] xll:leading-[160%] leading-[150%] xll:font-semibold font-medium tracking-[1px]'>👋 Develop high-quality websites</h5>
 
-                <h1 className='mt-[12px] text-[24px] xll:text-[56px] md:text-[32px] font-semibold xll:leading-[120%] md:leading-[125%] text-secondary font-secondary w-full'>
-                    <span className='text-primary'>F</span>ull Stack Web Developer
-                </h1>
+                <h1 className='mt-[12px] text-[24px] xll:text-[56px] md:text-[32px] font-semibold xll:leading-[120%] md:leading-[125%] text-secondary font-secondary w-full'>Full Stack Web Developer</h1>
 
                 <p className='md:w-8/12 lg:w-9/12 text-primary mt-2 text-base text-justify'>Are you looking for the perfect ReactJS developer, front-end developer, or MERN Stack developer? Then, you are in the right place. Get the professional result</p>
 
