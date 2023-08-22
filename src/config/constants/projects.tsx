@@ -13,7 +13,87 @@ export const projectItems: IProject[] = [
         images: [
             {
                 title: '',
-                src: '/projects/inventory/thumbnail.PNG'
+                src: '/projects/inventory/s0.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/inventory/s1.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/inventory/s1a.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/inventory/s1b.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/inventory/s1c.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/inventory/s1d.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/inventory/s1e.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/inventory/s2.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/inventory/s3.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/inventory/s4.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/inventory/s5.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/inventory/s6.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/inventory/s7.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/inventory/s8.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/inventory/s9.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/inventory/s10.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/inventory/s11.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/inventory/s12.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/inventory/s13.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/inventory/s14.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/inventory/s15.PNG'
             },
         ],
         links: [
@@ -30,6 +110,7 @@ export const projectItems: IProject[] = [
         features: [
             "Authentication & Permission based panel.",
             "Admin, Customers, Suppliers Management with searhing & filtering.",
+            "Dashboard to view total orders, customer, paid, due cash.",
             "Roles with permission assign.",
             "Create user with assigning accout Id to show statements.",
             "Can manage product categories.",
