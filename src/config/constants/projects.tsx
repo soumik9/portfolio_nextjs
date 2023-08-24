@@ -439,10 +439,6 @@ export const projectItems: IProject[] = [
         ],
         routes: [
             {
-                text: '[GET] - ',
-                link: ''
-            },
-            {
                 text: '[GET] - https://tour-management-g4ws.onrender.com/tours',
                 link: 'https://tour-management-g4ws.onrender.com/tours'
             },
@@ -485,6 +481,47 @@ export const projectItems: IProject[] = [
         ],
         techs: [
             "NodeJS", "ExpressJS", "Mongoose"
+        ],
+    },
+    {
+        _id: 'projectItem4a',
+        title: 'Ready Invoice',
+        category: frontendDevelopment,
+        thumbnail: '/projects/ready-invoice/thumbnail.PNG',
+        images: [
+            {
+                title: '',
+                src: '/projects/ready-invoice/thumbnail.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/ready-invoice/s1.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/ready-invoice/s2.PNG'
+            },
+        ],
+        links: [
+            {
+                name: 'Live Site',
+                link: 'https://ready-invoice.netlify.app/'
+            },
+            {
+                name: 'Github Code',
+                link: 'https://github.com/soumik9/html-js-invoice'
+            },
+        ],
+        description: '',
+        features: [
+            "Dynamic input values.",
+            "Input to show on print section.",
+            "Can print the invoice and reset if want.",
+            "Can add multiple products.",
+            "Discount price & total of invoice."
+        ],
+        techs: [
+            "HTML", "CSS", "JavaScript"
         ],
     },
     {

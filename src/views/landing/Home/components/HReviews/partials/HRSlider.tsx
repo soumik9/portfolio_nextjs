@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 import { reviewSlidersData } from '@config/constants';
 import Image from 'next/image';
-import { useRef } from 'react';
 const parse = require('html-react-parser');
 
 const swiperOptions = {
@@ -27,33 +26,11 @@ const swiperOptions = {
     },
 };
 
-interface SwiperInstance {
-    autoplay: {
-        start: () => void;
-        stop: () => void;
-    };
-}
-
 const HRSlider = () => {
-
-    const swiperRef = useRef<SwiperInstance | null>(null);
-
-    const handleMouseEnter = () => {
-        if (swiperRef.current) {
-            swiperRef.current.autoplay.stop();
-        }
-    };
-
-    const handleMouseLeave = () => {
-        if (swiperRef.current) {
-            swiperRef.current.autoplay.start();
-        }
-    };
-
     return (
-        <Swiper {...swiperOptions} onSwiper={swiper => (swiperRef.current = swiper)}>
+        <Swiper {...swiperOptions}>
             {reviewSlidersData.map((slideContent, index) => (<SwiperSlide key={slideContent._id} virtualIndex={index}>
-                <div className='bg-lightDark lg:p-[40px] p-[20px] rounded-sm'>
+                <div className='bg-lightDark lg:p-[40px] p-[20px] rounded-sm min-h-[420px]'>
                     <p className='leading-[160%] text-purple text-justify'>{slideContent.review}</p>
 
                     <div className='mt-8 flex items-center gap-8'>

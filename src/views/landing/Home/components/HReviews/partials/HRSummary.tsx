@@ -19,7 +19,12 @@ const HRSummary: React.FC = () => {
                     {item.percentage}
 
                     {index === 2 ? <span className='relative md:-top-[-1px] lg:top-0 top-0 ml-1.5'>
-                        <Rating value={value} readOnly={true} itemStyles={starCustomStyle} className='max-w-[100px] md:max-w-[120px] lg:max-w-[140px]' />
+                        <Rating
+                            value={value}
+                            readOnly={true}
+                            itemStyles={starCustomStyle}
+                            className='max-w-[100px] md:max-w-[120px] lg:max-w-[140px]'
+                        />
                     </span> : null}
                 </h3>
 

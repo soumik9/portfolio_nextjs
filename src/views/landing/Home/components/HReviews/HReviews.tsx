@@ -17,7 +17,7 @@ const HReviews = (props: Props) => {
                 titleSpan='talking'
             />
 
-            <div className="flex flex-col md:grid md:grid-cols-3 md:items-center xll:items-start md:gap-[60px]">
+            <div className="flex flex-col md:grid md:grid-cols-3 md:items-center md:gap-[60px]">
                 <div className='md:col-span-2 order-2 md:order-1'>
                     <HRSlider />
                 </div>
