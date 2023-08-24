@@ -9,6 +9,8 @@ import { Toaster } from 'react-hot-toast';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import '@smastrom/react-rating/style.css'
+
 import Head from 'next/head';
 
 export default function App({ Component, pageProps }: AppProps) {

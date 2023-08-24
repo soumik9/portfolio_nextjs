@@ -1,14 +1,13 @@
-import { hrSummaryItems } from '@config/constants'
+import { hrSummaryItems, starCustomStyle } from '@config/constants'
 import { hrResType } from '@config/types/types'
-import { Rating } from '@mui/material'
 import React, { useState } from 'react'
 import { cx } from 'src/hooks/helpers'
+import { Rating } from '@smastrom/react-rating';
 
-type Props = {}
+const HRSummary: React.FC = () => {
 
-const HRSummary = (props: Props) => {
-
-    const [value, setValue] = useState<number | null>(5);
+    // states
+    const [value, setValue] = useState<number>(5);
 
     return (
         <>
@@ -19,12 +18,8 @@ const HRSummary = (props: Props) => {
                 <h3 className='heading-h3 text-secondary tracking-[0.1em] flex justify-center md:justify-start items-center'>
                     {item.percentage}
 
-                    {index === 2 ? <span className='relative md:-top-1 top-[0.2rem] ml-1.5'>
-                        <Rating name="read-only" value={value} readOnly sx={{
-                            '& .MuiRating-iconFilled': {
-                                color: '#E7BD8D',
-                            },
-                        }} />
+                    {index === 2 ? <span className='relative md:-top-[-1px] lg:top-0 top-0 ml-1.5'>
+                        <Rating value={value} readOnly={true} itemStyles={starCustomStyle} className='max-w-[100px] md:max-w-[120px] lg:max-w-[140px]' />
                     </span> : null}
                 </h3>
 

@@ -1,6 +1,5 @@
-import { address, emailAcc, encodedAdress, encodedEmail, footerUserfulItems, mobileNumber, socialItems } from '@config/constants'
+import { encodedAdress, encodedEmail, footerUserfulItems, socialItems } from '@config/constants'
 import { navItemType } from '@config/types/types'
-import { Typography } from '@mui/material'
 import React, { useState } from 'react'
 import { cx } from 'src/hooks/helpers'
 import FooterLinksDiv from './partials/FooterLinksDiv'
@@ -11,9 +10,7 @@ import DesktopFollowMe from './partials/DesktopFollowMe'
 import DetailsItem from './partials/DetailsItem'
 import { useRouter } from 'next/router'
 
-type Props = {}
-
-const Footer = (props: Props) => {
+const Footer = () => {
 
     const router = useRouter();
 
@@ -42,13 +39,12 @@ const Footer = (props: Props) => {
                         <div className='text-center md:grid md:grid-cols-3 md:items-center md:text-start'>
 
                             <div className='col-span-2'>
-                                <Typography variant="h4" gutterBottom className='text-secondary'>
-                                    {` Let's keep in touch!`}
-                                </Typography>
 
-                                <Typography variant="subtitle1" gutterBottom className='text-secondary mt-0 mb-2'>
-                                    Find us on any of these platforms, we respond 1-2 business days.
-                                </Typography>
+                                <h4 className='text-secondary text-[26px]'>Soumik Ahammed</h4>
+
+                                <p className='text-secondary mt-0 mb-2'>
+                                    {`Message me on any of these platforms, and I'll respond within 1-2 business days.`}
+                                </p>
 
                                 <DesktopFollowMe />
                             </div>
@@ -120,12 +116,12 @@ const Footer = (props: Props) => {
                     <hr className="md:my-6 my-4 border-primary-300" />
 
 
-                    <div className="w-full px-4 mx-auto text-center">
-                        <Typography variant="body2" gutterBottom className="py-1 uppercase">
+                    <div className="w-full px-4 mx-auto text-center text-sm">
+                        <p className="py-1 uppercase">
                             Copyright ©
                             <span id="get-current-year">{new Date().getFullYear()}</span>
                             <span className='text-primary-300'> Soumik Ahammed</span>
-                        </Typography>
+                        </p>
                     </div>
 
 

@@ -119,6 +119,7 @@ export const projectItems: IProject[] = [
             "Can re-stock a product.",
             "Add To Cart functionlity with set a selling price.",
             "Can view add to cart list with total.",
+            "Can remove items from card and item will restock.",
             "Can checkout the cart with set labor charge, discount.",
             "Can set customer then set paid & due amount on checkout",
             "Can print the invoice & by whom the invoice is printed.",
