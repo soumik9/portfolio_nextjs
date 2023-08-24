@@ -28,11 +28,13 @@ const Intro: React.FC = () => {
                         />
                     </Link>
 
-                    <Button
-                        text='Download CV'
-                        outlined
-                        endIcon={<><AiOutlineDownload /></>}
-                    />
+                    <a href="https://drive.google.com/file/d/1ofsoXhHNjDpyixpiHbE-xAY4zkQHiHT-/view?usp=drive_link" target='_blank' rel="noreferrer">
+                        <Button
+                            text='Download CV'
+                            outlined
+                            endIcon={<><AiOutlineDownload /></>}
+                        />
+                    </a>
                 </div>
             </div>
         </SectionLayout>

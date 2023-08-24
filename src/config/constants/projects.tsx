@@ -319,7 +319,7 @@ export const projectItems: IProject[] = [
             },
         ],
         techs: [
-            "ReactJS", "TypeScript", "Redux Toolkkit", "RTK Query", "React hook forms", "Yup", "React hot toast", "NodeJS", "Express", "MongoDB", "Mongoose", "Zod", "JWT"
+            "ReactJS", "TypeScript", "Redux Toolkit", "RTK Query", "React hook forms", "Yup", "React hot toast", "NodeJS", "Express", "MongoDB", "Mongoose", "Zod", "JWT"
         ],
     },
     {
