@@ -242,7 +242,7 @@ export const projectItems: IProject[] = [
         links: [
             {
                 name: 'Live Site',
-                link: 'https://booking-depository.vercel.app/'
+                link: 'https://booking-depository.vercel.app'
             },
             {
                 name: 'Client Github',
@@ -250,7 +250,7 @@ export const projectItems: IProject[] = [
             },
             {
                 name: 'Server Live',
-                link: 'https://book-depository-server.vercel.app/'
+                link: 'https://book-depository-server.vercel.app'
             },
             {
                 name: 'Server Github',
@@ -259,18 +259,18 @@ export const projectItems: IProject[] = [
         ],
         description: "The Booking Catalog App stands as a revolutionary solution at the intersection of modern technology. With its comprehensive features, user-friendly interface, and seamless accessibility, this app redefines the way individuals and businesses handle bookings, wishlists, and current plans.",
         features: [
-            "Top 10 lastest books on home page.",
+            "Top 10 latest books on the home page.",
             "Custom authentication.",
-            "Add new book (authentication required).",
+            "Add a new book (authentication required).",
             "All books with searching by author || title || genre, filtering with genre & year.",
-            "Add new book (authentication required)",
-            "Single book details page with reviews",
-            "Can submit a review on book (authentication required).",
+            "Add new book (authentication required).",
+            "Single book details page with reviews.",
+            "Can submit a review a on book (authentication required).",
             "Edit book (authentication required).",
             "Delete book (authentication required).",
             "Can add book to wishlist (authentication required).",
-            "Can add book to Current Plan (authentication required).",
-            "Current Plan page can mark book as finished reading (authentication required).",
+            "Can add a book to the Current Plan (authentication required).",
+            "The Current Plan page can mark a book as finished reading (authentication required).",
         ],
         routes: [
             {
