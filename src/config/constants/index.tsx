@@ -22,6 +22,7 @@ export const encodedAdress: string = 'aHR0cHM6Ly9nb28uZ2wvbWFwcy9vZ0VEV3NYUllTNH
 export const homeUrl: string = "/";
 export const aboutUrl: string = "/about";
 export const projectsUrl: string = "/projects";
+export const servicesUrl: string = "/services";
 export const contactUrl: string = "/contact-us";
 
 export const navItems: navItemType[] = [
@@ -128,8 +129,8 @@ export const socialItems: navItemType[] = [
 export const footerUserfulItems: navItemType[] = [
     {
         _id: 'footUseful_1',
-        title: 'About Me',
-        url: aboutUrl,
+        title: 'Services',
+        url: servicesUrl,
     },
     {
         _id: 'footUseful_2',

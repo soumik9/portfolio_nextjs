@@ -40,7 +40,7 @@ const Footer = () => {
 
                             <div className='col-span-2'>
 
-                                <h4 className='text-secondary text-[26px]'>Soumik Ahammed</h4>
+                                <h4 className='text-primary text-[26px]'>Soumik Ahammed</h4>
 
                                 <p className='text-secondary mt-0 mb-2'>
                                     {`Message me on any of these platforms, and I'll respond within 1-2 business days.`}
