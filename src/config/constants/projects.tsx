@@ -106,7 +106,7 @@ export const projectItems: IProject[] = [
                 link: 'https://docs.google.com/document/d/1DB_dRoiNHu7xeFfBG_piC6-LhFlM5TZundQ0aMPRbNg/edit'
             },
         ],
-        description: '',
+        description: 'The Inventory Web App is a cutting-edge solution designed to revolutionize inventory management for businesses of all sizes. With its intuitive user interface, advanced features, and seamless accessibility, the app empowers businesses to efficiently track, manage, and optimize their inventory in real-time.',
         features: [
             "Authentication & Permission based panel.",
             "Admin, Customers, Suppliers Management with searhing & filtering.",
@@ -525,36 +525,59 @@ export const projectItems: IProject[] = [
         ],
     },
     {
-        _id: 'projectItem5',
+        _id: 'projectItemXYZ',
         title: 'Tazkily',
         category: frontendDevelopment,
         thumbnail: '/projects/tazkily/thumbnail.PNG',
         images: [
             {
                 title: '',
-                src: ''
-            }
+                src: '/projects/tazkily/thumbnail.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/tazkily/s1.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/tazkily/s2.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/tazkily/s3.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/tazkily/s4.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/tazkily/s5.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/tazkily/s6.PNG'
+            },
         ],
         links: [
             {
                 name: 'Live Site',
-                link: ''
+                link: 'https://soumik9.github.io/tazkily/'
             },
             {
-                name: 'Client Github',
-                link: ''
+                name: 'Github',
+                link: 'https://github.com/soumik9/tazkily'
             },
         ],
-        description: '',
+        description: 'Tazkily integrates with the products you use, bringing all your tasks, files and communications in one place so you always know what to do next.',
         features: [
             "Responsive website.",
-            "Admin, Customer.",
-            "Login, Registration, Google Auth, Reset.",
-            "JWT token verification.",
-            "Stripe payment intregation."
+            "Header, Footer, Hero section.",
+            "Packages section.",
+            "Blogs Section.",
         ],
         techs: [
-            "React",
+            "HTML", "CSS", "Bootsrap"
         ],
     },
 ]
