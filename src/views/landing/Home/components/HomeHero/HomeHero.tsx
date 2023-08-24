@@ -47,7 +47,7 @@ const HomeHero: React.FC = () => {
                 alt='Soumik Ahammed'
                 className='
                 md:absolute hidden md:block
-                3xl:w-[349px] xll:w-[358px] lg:w-[310px] w-[270px] 
+                3xl:w-[332px] xll:w-[341px] lg:w-[315px] md:w-[275.5px] w-[270px] 
                 3xl:right-[20rem] xll:right-[4.9rem] lg:right-[2rem] right-0
                 3xl:top-[5.55rem] xll:top-[4.7rem] lg:top-[5.15rem] md:top-[3.47rem] top-[3.5rem]'
             />
