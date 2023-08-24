@@ -53,11 +53,18 @@ const ProjectCard = ({ open, data, setOpen, setDetailsData }: Props) => {
 
 
                     <div className='mt-5 md:mt-7 flex justify-between items-center'>
-                        <a href={data.links[0].link} target='_blank' rel="noreferrer" className='bg-white text-purple-700 hover:text-purple-600 border border-primary focus:text-white p-[10px] text-sm focus:bg-smartian rounded-sm font-medium button-arounder'>{data.links[0].name}</a>
+                        <a
+                            href={data.links[0].link}
+                            target='_blank'
+                            rel="noreferrer"
+                            className='bg-white text-purple-700 hover:text-purple-600 border border-primary focus:text-white p-[10px_15px] text-sm focus:bg-smartian rounded-sm font-medium button-arounder'
+                        >
+                            {data.links[0].name}
+                        </a>
 
                         <Button
                             text='Show More'
-                            classes='p-[10px] text-sm'
+                            classes='!p-[10px_15px] text-sm'
                             onClick={() => {
                                 setOpen(!open);
                                 setDetailsData(data);

@@ -197,6 +197,132 @@ export const projectItems: IProject[] = [
         ],
     },
     {
+        _id: 'projectItem2a',
+        title: 'Book Depository',
+        category: fullStackWebDevelopment,
+        thumbnail: '/projects/booking-dep/thumbnail.PNG',
+        images: [
+            {
+                title: '',
+                src: '/projects/booking-dep/thumbnail.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/booking-dep/s1.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/booking-dep/s2.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/booking-dep/s3.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/booking-dep/s4.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/booking-dep/s5.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/booking-dep/s6.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/booking-dep/s7.PNG'
+            },
+            {
+                title: '',
+                src: '/projects/booking-dep/s8.PNG'
+            },
+        ],
+        links: [
+            {
+                name: 'Live Site',
+                link: 'https://booking-depository.vercel.app/'
+            },
+            {
+                name: 'Client Github',
+                link: 'https://github.com/soumik9/booking-depository/tree/main/client'
+            },
+            {
+                name: 'Server Live',
+                link: 'https://book-depository-server.vercel.app/'
+            },
+            {
+                name: 'Server Github',
+                link: 'https://github.com/soumik9/booking-depository/tree/main/server'
+            },
+        ],
+        description: "The Booking Catalog App stands as a revolutionary solution at the intersection of modern technology. With its comprehensive features, user-friendly interface, and seamless accessibility, this app redefines the way individuals and businesses handle bookings, wishlists, and current plans.",
+        features: [
+            "Top 10 lastest books on home page.",
+            "Custom authentication.",
+            "Add new book (authentication required).",
+            "All books with searching by author || title || genre, filtering with genre & year.",
+            "Add new book (authentication required)",
+            "Single book details page with reviews",
+            "Can submit a review on book (authentication required).",
+            "Edit book (authentication required).",
+            "Delete book (authentication required).",
+            "Can add book to wishlist (authentication required).",
+            "Can add book to Current Plan (authentication required).",
+            "Current Plan page can mark book as finished reading (authentication required).",
+        ],
+        routes: [
+            {
+                text: '[POST] - https://book-depository-server.vercel.app/api/v1/auth/signup',
+                link: 'https://book-depository-server.vercel.app/api/v1/auth/signup'
+            },
+            {
+                text: '[POST] - https://book-depository-server.vercel.app/api/v1/auth/login',
+                link: 'https://book-depository-server.vercel.app/api/v1/auth/login'
+            },
+            {
+                text: '[GET] - https://book-depository-server.vercel.app/api/v1/book',
+                link: 'https://book-depository-server.vercel.app/api/v1/book'
+            },
+            {
+                text: '[GET] - https://book-depository-server.vercel.app/api/v1/book/64b54d91823907229f383132',
+                link: 'https://book-depository-server.vercel.app/api/v1/book/64b54d91823907229f383132'
+            },
+            {
+                text: '[POST] - https://book-depository-server.vercel.app/api/v1/book (auth required)',
+                link: 'https://book-depository-server.vercel.app/api/v1/book'
+            },
+            {
+                text: '[PATCH] - https://book-depository-server.vercel.app/api/v1/book/64b54d91823907229f383132 (auth required)',
+                link: 'https://book-depository-server.vercel.app/api/v1/book/64b54d91823907229f383132'
+            },
+            {
+                text: '[DELETE] - https://book-depository-server.vercel.app/api/v1/book/64b54d20823907229f383124 (auth required)',
+                link: 'https://book-depository-server.vercel.app/api/v1/book/64b54d20823907229f383124'
+            },
+            {
+                text: '[POST] - https://book-depository-server.vercel.app/api/v1/review (auth required)',
+                link: 'https://book-depository-server.vercel.app/api/v1/review'
+            },
+            {
+                text: ' [POST] - https://book-depository-server.vercel.app/api/v1/wishlist (auth required)',
+                link: 'https://book-depository-server.vercel.app/api/v1/wishlist'
+            },
+            {
+                text: '[POST] - https://book-depository-server.vercel.app/api/v1/current-plan (auth required)',
+                link: 'https://book-depository-server.vercel.app/api/v1/current-plan'
+            },
+            {
+                text: '[PATCH] - https://book-depository-server.vercel.app/api/v1/current-plan/64bd5ce7958938b90d31d3a3 (auth required)',
+                link: 'https://book-depository-server.vercel.app/api/v1/current-plan/64bd5ce7958938b90d31d3a3'
+            },
+        ],
+        techs: [
+            "ReactJS", "TypeScript", "Redux Toolkkit", "RTK Query", "React hook forms", "Yup", "React hot toast", "NodeJS", "Express", "MongoDB", "Mongoose", "Zod", "JWT"
+        ],
+    },
+    {
         _id: 'projectItem31bx',
         title: 'Cow Hut',
         category: backendDevelopment,
