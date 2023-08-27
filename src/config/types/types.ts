@@ -63,3 +63,9 @@ export interface IProject {
     routes?: IProjectRoutes[];
     techs: string[];
 }
+
+export type selectItemType = {
+    _id: string;
+    label: string;
+    value: string;
+};

@@ -1,8 +1,15 @@
-import { IProject } from "@config/types/types";
+import { IProject, selectItemType } from "@config/types/types";
 
 export const fullStackWebDevelopment: string = 'Full Stack Web Development';
 export const backendDevelopment: string = 'Backend Development';
 export const frontendDevelopment: string = 'Frontend Development';
+
+export const projectCategoryOptions: selectItemType[] = [
+    { _id: 'uT0', label: 'Select Category', value: '' },
+    { _id: 'uT1', label: fullStackWebDevelopment, value: fullStackWebDevelopment },
+    { _id: 'uT2', label: backendDevelopment, value: backendDevelopment },
+    { _id: 'uT3', label: frontendDevelopment, value: frontendDevelopment },
+]
 
 export const projectItems: IProject[] = [
     {
