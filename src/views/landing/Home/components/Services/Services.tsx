@@ -4,9 +4,7 @@ import { serviceItems } from '@config/constants/services'
 import React from 'react'
 import { BsCheck } from 'react-icons/bs'
 
-type Props = {}
-
-const Services = (props: Props) => {
+const Services = () => {
     return (
         <SectionLayout css='lg:pt-[40px]'>
             <SectionTop

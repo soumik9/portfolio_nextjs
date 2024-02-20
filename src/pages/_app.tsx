@@ -12,8 +12,23 @@ import 'swiper/css/pagination';
 import '@smastrom/react-rating/style.css'
 
 import Head from 'next/head';
+import { useEffect, useState } from 'react';
 
 export default function App({ Component, pageProps }: AppProps) {
+
+  // *states
+  const [laoding, setLoading] = useState(true);
+
+  // *checking the window
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setLoading(false);
+    }
+  }, []);
+
+  // *loading
+  if (laoding) return <>Loading...</>
+
   return <LandingLayout>
 
     <Head>

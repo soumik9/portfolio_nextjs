@@ -22,12 +22,12 @@ const Skills = (props: Props) => {
 
                     <SkillMainCard
                         title='Frontend & Backend'
-                        items={skillItems.slice(0, 17)}
+                        items={skillItems.slice(0, 16)}
                     />
 
                     <SkillMainCard
                         title='Others'
-                        items={skillItems.slice(17)}
+                        items={skillItems.slice(16)}
                         classes='lg:mt-14 mt-9'
                     />
 

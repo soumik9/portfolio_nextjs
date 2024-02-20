@@ -7,7 +7,7 @@ import { AiOutlineDownload } from 'react-icons/ai'
 const Intro: React.FC = () => {
     return (
         <SectionLayout css='lg:pt-[40px]'>
-            <div className='grid lg:grid-cols-2 xll:grid-cols-3 justify-center items-center'>
+            <div className='grid lg:grid-cols-2 xll:grid-cols-3 justify-center items-center' >
 
                 <div className='xll:col-span-2'>
                     <h5 className='leading-[150%] xll:font-semibold font-medium tracking-[1px] text-secondary uppercase md:text-center lg:text-start'>

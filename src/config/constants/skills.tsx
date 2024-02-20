@@ -1,21 +1,20 @@
 import { skillItemType } from '@config/types/types';
 import { AiOutlineFileExcel, AiOutlineFileWord, AiOutlineHtml5 } from 'react-icons/ai';
 import { BsFiletypeCss, BsBootstrap } from 'react-icons/bs';
-import { BiLogoTailwindCss, BiLogoReact, BiLogoRedux, BiLogoNodejs, BiLogoMongodb, BiLogoPostgresql, BiLogoTypescript, BiLogoHeroku, BiLogoNetlify } from 'react-icons/bi';
+import { BiLogoTailwindCss, BiLogoReact, BiLogoRedux, BiLogoNodejs, BiLogoMongodb, BiLogoHeroku, BiLogoNetlify } from 'react-icons/bi';
 import { RiJavascriptLine } from 'react-icons/ri';
 import { FiGithub, FiTrello } from 'react-icons/fi';
 import { TbBrandNextjs, TbBrandTypescript } from 'react-icons/tb';
 import { SiExpress, SiMongoose, SiMysql, SiPostgresql, SiPrisma } from 'react-icons/si';
-import { FaLaravel } from 'react-icons/fa';
 import { LiaFilePowerpointSolid } from 'react-icons/lia';
 import { cx } from 'src/hooks/helpers';
 
-const commonCls = 'text-primary text-[18px] md:text-[22px] lg:text-[26px]'
+const commonCls = 'text-purple text-[18px] md:text-[22px] lg:text-[26px]'
 
 export const skillItems: skillItemType[] = [
     {
         _id: 'skill_1',
-        title: "HTML ",
+        title: "HTML",
         icon: <AiOutlineHtml5 className={cx(commonCls)} />,
         isExpert: true
     },
@@ -101,7 +100,7 @@ export const skillItems: skillItemType[] = [
         _id: 'skill_14',
         title: 'PostgreSQL',
         icon: <SiPostgresql className={cx(commonCls)} />,
-        isExpert: true
+        isExpert: false
     },
     {
         _id: 'skill_14aq1',
@@ -109,12 +108,12 @@ export const skillItems: skillItemType[] = [
         icon: <SiPrisma className={cx(commonCls)} />,
         isExpert: false
     },
-    {
-        _id: 'skill_15',
-        title: 'Laravel',
-        icon: <FaLaravel className={cx(commonCls)} />,
-        isExpert: false
-    },
+    // {
+    //     _id: 'skill_15',
+    //     title: 'Laravel',
+    //     icon: <FaLaravel className={cx(commonCls)} />,
+    //     isExpert: false
+    // },
     {
         _id: 'skill_16',
         title: 'Github',

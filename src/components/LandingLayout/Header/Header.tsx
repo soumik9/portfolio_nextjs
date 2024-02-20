@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import NavItem from './partials/NavItem';
-import codeEditorIcon from '../../../../public/json/code.json';
-import Lottie from 'react-lottie-player';
 import SocialItems from './partials/SocialItems';
 import useHideBodyScroll from 'src/hooks/useHideBodyScroll';
 import { navItemType } from '@config/types/types';
@@ -11,21 +9,18 @@ import Hamburger from '@components/Icons/global/Hamburger';
 import Cross from '@components/Icons/global/Cross';
 import Link from 'next/link';
 import MobileMenu from './partials/MobileMenu';
+import { FaCode } from 'react-icons/fa';
 
-type Props = {}
-
-const Header = (props: Props) => {
+const Header = () => {
 
     // states
     const [showSideNav, setShowSideNav] = useState(false);
+
     // handlers
     const handleSideNav = (): void => setShowSideNav(!showSideNav);
 
+    // hide body
     useHideBodyScroll(showSideNav);
-
-    const [play, setPlay] = useState({
-        sIcon: false,
-    });
 
     return (
         <>
@@ -63,20 +58,10 @@ const Header = (props: Props) => {
                                 href={githubUrl}
                                 target='_blank'
                                 rel="noreferrer"
-                                className='flex items-center gap-1 group'
+                                className='flex items-center gap-2 group'
                                 aria-label='Github'
-                                onMouseEnter={() => setPlay((prev) => ({ ...prev, sIcon: true }))}
-                                onMouseLeave={() => setPlay((prev) => ({ ...prev, sIcon: false }))}
                             >
-                                <div className='relative top-[2px]'>
-                                    <Lottie
-                                        animationData={codeEditorIcon}
-                                        play={play.sIcon}
-                                        speed={0.5}
-                                        style={{ width: 24, height: 24 }}
-                                        loop={play.sIcon}
-                                    />
-                                </div>
+                                <FaCode className='relative top-[2px] text-secondary group-hover:text-primary text-[18px] group-hover:rotate-[360deg] duration-500' />
                                 <p className='group-hover:text-primary trans'>Github</p>
                             </a>
 

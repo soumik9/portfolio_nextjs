@@ -9,10 +9,11 @@ const HomeHero: React.FC = () => {
     return (
         <SectionLayout>
 
-            <div className='md:hidden flex justify-center mb-3'>
+            <div className='md:hidden flex justify-center mb-3' >
                 <div className='bg-smartian rounded-t-[10em] rounded-b-lg'>
                     <Image
-                        src='/global/wpp.png'
+                        src='/global/pp-n.png'
+                        // src='/global/wpp.png'
                         width={250}
                         height={250}
                         alt='Soumik Ahammed'
@@ -41,14 +42,17 @@ const HomeHero: React.FC = () => {
             </div>
 
             <Image
-                src='/global/wpp.png'
+                src='/global/pp-n.png'
+
+                // src='/global/wpp.png'
                 width={370}
                 height={612}
                 alt='Soumik Ahammed'
                 className='
                 md:absolute hidden md:block
-                3xl:w-[332px] xll:w-[341px] lg:w-[315px] md:w-[275.5px] w-[270px] 
-                3xl:right-[20rem] xll:right-[4.9rem] lg:right-[2rem] right-0
+                3xl:w-[350px] xll:w-[341px] lg:w-[315px] md:w-[275.5px] w-[270px] 
+                3xl:h-[498px] xll:h-[512px] lg:h-[449px] md:h-[413px] h-[400px] 
+                3xl:right-[20.3rem] xll:right-[5.6rem] lg:right-[2.3rem] right-0
                 3xl:top-[5.55rem] xll:top-[4.7rem] lg:top-[5.15rem] md:top-[3.47rem] top-[3.5rem]'
             />
         </SectionLayout>

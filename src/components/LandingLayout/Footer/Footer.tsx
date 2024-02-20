@@ -1,21 +1,20 @@
 import { encodedAdress, encodedEmail, footerUserfulItems, socialItems } from '@config/constants'
 import { navItemType } from '@config/types/types'
-import React, { useState } from 'react'
+import React from 'react'
 import { cx } from 'src/hooks/helpers'
 import FooterLinksDiv from './partials/FooterLinksDiv'
-import wakieIcon from '../../../../public/json/walkie.json'
-import emailIcon from '../../../../public/json/email.json'
-import locationIcon from '../../../../public/json/location.json'
 import DesktopFollowMe from './partials/DesktopFollowMe'
 import DetailsItem from './partials/DetailsItem'
 import { useRouter } from 'next/router'
+import { BiPhoneCall } from 'react-icons/bi'
+import { MdOutlineEditLocationAlt, MdOutlineMarkEmailRead } from 'react-icons/md'
+
+const iconCls = 'text-secondary text-[18px] group-hover:rotate-[360deg] duration-500 group-hover:text-primary'
 
 const Footer = () => {
 
+    // *global
     const router = useRouter();
-
-    // states
-    const [play, setPlay] = useState({ wakieIcon: false, emailIcon: false, locationIcon: false });
 
     const sendMail = () => {
         router.push('mailto:'.concat(atob(encodedEmail)));
@@ -78,32 +77,23 @@ const Footer = () => {
 
                                 <ul className="mt-4 flex flex-col items-center md:items-start">
                                     <DetailsItem
-                                        playIcon={play.wakieIcon}
-                                        lottieIcon={wakieIcon}
                                         text={'Call Me'}
                                         onClick={phoneCall}
-                                        onMouseEnter={() => setPlay((prev: any) => ({ ...prev, wakieIcon: true }))}
-                                        onMouseLeave={() => setPlay((prev: any) => ({ ...prev, wakieIcon: false }))}
+                                        icon={<BiPhoneCall className={cx(iconCls)} />}
                                     />
 
                                     <DetailsItem
-                                        playIcon={play.emailIcon}
-                                        lottieIcon={emailIcon}
                                         text={'Email Me'}
                                         onClick={sendMail}
-                                        onMouseEnter={() => setPlay((prev: any) => ({ ...prev, emailIcon: true }))}
-                                        onMouseLeave={() => setPlay((prev: any) => ({ ...prev, emailIcon: false }))}
                                         mainCss='py-3'
+                                        icon={<MdOutlineMarkEmailRead className={cx(iconCls)} />}
                                     />
 
                                     <DetailsItem
-                                        playIcon={play.locationIcon}
-                                        lottieIcon={locationIcon}
                                         text={'Find My Location'}
                                         onClick={adressFind}
-                                        onMouseEnter={() => setPlay((prev: any) => ({ ...prev, locationIcon: true }))}
-                                        onMouseLeave={() => setPlay((prev: any) => ({ ...prev, locationIcon: false }))}
                                         target={true}
+                                        icon={<MdOutlineEditLocationAlt className={cx(iconCls)} />}
                                     />
 
                                 </ul>
