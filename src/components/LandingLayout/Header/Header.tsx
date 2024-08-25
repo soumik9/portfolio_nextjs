@@ -10,6 +10,7 @@ import Cross from '@components/Icons/global/Cross';
 import Link from 'next/link';
 import MobileMenu from './partials/MobileMenu';
 import { FaCode } from 'react-icons/fa';
+import { motion } from "framer-motion"
 
 const Header = () => {
 
@@ -34,10 +35,19 @@ const Header = () => {
 
                         <div className='flex gap-[40px] items-center'>
 
-                            <Link href={homeUrl} aria-label='Soumik Ahammed'
-                                className='h-[40px] w-[40px] bg-primary flex items-center justify-center rounded-[8px]'>
-                                <span className='text-[32px] text-lightDark'>S</span>
-                            </Link>
+                            <motion.div
+                                animate={{
+                                    scale: [1, 1.5, 1.5, 1, 1],
+                                    rotate: [0, 0, 270, 270, 0],
+                                    borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+                                    transition: { duration: 2, ease: "easeInOut" },
+                                }}
+                            >
+                                <Link href={homeUrl} aria-label='Soumik Ahammed'
+                                    className='h-[40px] w-[40px] bg-primary flex items-center justify-center rounded-[8px]'>
+                                    <span className='text-[32px] text-lightDark'>S</span>
+                                </Link>
+                            </motion.div>
 
 
                             {/* desktop menu */}
