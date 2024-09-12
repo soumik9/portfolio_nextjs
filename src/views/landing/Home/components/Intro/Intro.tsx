@@ -3,6 +3,8 @@ import SectionLayout from '@components/ViewsComp/SectionLayout/SectionLayout'
 import { Link } from 'react-scroll';
 import React from 'react'
 import { AiOutlineDownload } from 'react-icons/ai'
+import { BsBriefcase } from "react-icons/bs";
+import LightDarkCardLayout from '@components/ViewsComp/LightDarkCardLayout/LightDarkCardLayout';
 
 const Intro: React.FC = () => {
     return (
@@ -36,6 +38,27 @@ const Intro: React.FC = () => {
                         />
                     </a>
                 </div>
+            </div>
+
+            <div className='mt-6'>
+                <div className='flex gap-10 items-start'>
+                    <div className='h-8 w-8 bg-primary flex items-center justify-center text-lightDark rounded-full '>
+                        <BsBriefcase className='text-xl' />
+                    </div>
+                    <LightDarkCardLayout divCss='relative !p-5'>
+                        <div className="absolute left-0 -translate-y-1/2 top-4 -ml-4">
+                            <div className="w-0 h-0 border-t-8 border-b-8 border-r-8 border-r-purple border-t-transparent border-b-transparent"></div>
+                        </div>
+
+                        <div>
+                            <h3 className="mb-2 text-lg font-bold text-purple">FUll Stack Developer L-1 (MERN)</h3>
+                            <p className="text-secondary">Work closely with cross-functional teams to design and develop scalable, reliable, and high-performance backend systems.</p>
+                        </div>
+                    </LightDarkCardLayout>
+
+                </div>
+
+
             </div>
         </SectionLayout>
     )

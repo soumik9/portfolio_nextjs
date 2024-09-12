@@ -4,7 +4,6 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay, Pagination } from 'swiper/modules';
 import Image from 'next/image';
-import { BsArrowRight } from 'react-icons/bs';
 import { backendDevelopment, frontendDevelopment, fullStackWebDevelopment } from '@config/constants/projects';
 import { cx } from 'src/hooks/helpers';
 import PModalList from '../partials/PModalList';

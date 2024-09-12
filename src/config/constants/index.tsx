@@ -78,17 +78,17 @@ export const navSocialItems: navItemType[] = [
 export const summaryItems: summaryItemType[] = [
     {
         _id: 'summ_1',
-        count: '20+',
+        count: '70+',
         title: 'Project Completed',
     },
     {
         _id: 'summ_2',
-        count: '7+',
+        count: '10+',
         title: 'Global Clients',
     },
     {
         _id: 'summ_3',
-        count: '2+',
+        count: '3+',
         title: 'Years Experience',
     },
 ]
